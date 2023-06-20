@@ -1,0 +1,252 @@
+[
+	{
+		"name":"Synecdoche, New York",
+		"poster":"./imgs/2019/synecdoche-new-york.webp",
+		"year":"",
+		"ratingNameOne":"Phillip Seymour Hoffman",
+		"ratingOne":5,
+		"ratingNameTwo":"Depressing",
+		"ratingTwo":5,
+		"description":"A nightmarish, abstract art film about life and (mostly) death. I think it's about a playwright who's chasing his life's masterpiece. Extremely rough watch."
+	},
+	{
+		"name":"Osmosis Jones",
+		"poster":"./imgs/2019/osmosis-jones.webp",
+		"year":"",
+		"ratingNameOne":"Action",
+		"ratingOne":3,
+		"ratingNameTwo":"Comedy",
+		"ratingTwo":3,
+		"description":"This animated goofball buddy-cop film takes place in the body of Bill Murray, with all the characters being microbes and stuff. It's actually pretty good. Creative gimmicks, good chemistry, Bill Murray."
+	},
+	{
+		"name":"Dead Man",
+		"poster":"./imgs/2019/dead-man.webp",
+		"year":"",
+		"ratingNameOne":"Slow",
+		"ratingOne":4,
+		"ratingNameTwo":"Beautiful",
+		"ratingTwo":4,
+		"description":"Dark and bizarre, this Jarmusch film is about a hapless guy who goes on a brutal journey through the American wild west. Features lots of haunting imagery."
+	},
+	{
+		"name":"One Hour Photo",
+		"poster":"./imgs/2019/one-hour-photo.webp",
+		"year":"",
+		"ratingNameOne":"Dark",
+		"ratingOne":4,
+		"ratingNameTwo":"Sinister",
+		"ratingTwo":4,
+		"description":"A dark and wild ride featuring Robin Williams as like a creepy stalker guy. If you want to experience commercial film development and other fucked up shit, this is a great choice."
+	},
+	{
+		"name":"Secret of NIMH",
+		"poster":"./imgs/2019/the-secret-of-nimh.webp",
+		"year":"",
+		"ratingNameOne":"Family Film",
+		"ratingOne":4,
+		"ratingNameTwo":"Pretty Great",
+		"ratingTwo":4,
+		"description":"A more serious kid's film, this Don Bluth epic stars a widow field mouse who's trying to save her sick children. This one's characterized by a darker tone and lush animation."
+	},
+	{
+		"name":"Waking Life",
+		"poster":"./imgs/2019/waking-life.webp",
+		"year":"",
+		"ratingNameOne":"Unique ",
+		"ratingOne":4,
+		"ratingNameTwo":"Philosophical",
+		"ratingTwo":5,
+		"description":"This truly weird anthology film is just all over the map. We follow a protagonist as he travels from dream to dream after having died(?). Has some really cool indie-type art stuff."
+	},
+	{
+		"name":"Half Baked",
+		"poster":"./imgs/2019/half-baked.webp",
+		"year":"",
+		"ratingNameOne":"Quirky",
+		"ratingOne":4,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":3,
+		"description":"Dave Chappelle has to save one of his buddies by selling medical-grade marijuana he steals from a lab. But this plan soons runs into some big complications. "
+	},
+	{
+		"name":"Rifftrax Super Mario Bros.",
+		"poster":"./imgs/2019/super-mario-bros.webp",
+		"year":"",
+		"ratingNameOne":"Comedy",
+		"ratingOne":4,
+		"ratingNameTwo":"Wild Ride",
+		"ratingTwo":4,
+		"description":"The cast of MST3K riffs on this video game classic. A great two-for-one, because Super Mario Bros. is worth a watch in its own right."
+	},
+	{
+		"name":"Blazing Saddles",
+		"poster":"./imgs/2019/blazing-saddles.webp",
+		"year":"",
+		"ratingNameOne":"Hilarious",
+		"ratingOne":4,
+		"ratingNameTwo":"From a Different Era",
+		"ratingTwo":5,
+		"description":"An absolutely classic Mel Brooks film. Basically it's an indictment of race relations in America that devolves into a parody fever dream."
+	},
+	{
+		"name":"The Postman",
+		"poster":"./imgs/2019/the-postman.webp",
+		"year":"",
+		"ratingNameOne":"Post-Apocalyptic",
+		"ratingOne":5,
+		"ratingNameTwo":"Kevin Costner",
+		"ratingTwo":4,
+		"description":"In the post-apocalyptic world, one man finds a postman's outfit and starts delivering letters. This causes a war basically. Three hours long."
+	},
+	{
+		"name":"Kung Pow Enter the Fist",
+		"poster":"./imgs/2019/kung-pow-enter-the-fist.webp",
+		"year":"",
+		"ratingNameOne":"Absurd",
+		"ratingOne":5,
+		"ratingNameTwo":"Quotable",
+		"ratingTwo":3,
+		"description":"Some guy took a bunch of old kung-fu movie footage and cut it together, added a dub track, and made his own movie. It came out <i>really</i> weird."
+	},
+	{
+		"name":"Apt Pupil",
+		"poster":"./imgs/2019/apt-pupil.webp",
+		"year":"",
+		"ratingNameOne":"Dark",
+		"ratingOne":5,
+		"ratingNameTwo":"Uncomfortable",
+		"ratingTwo":5,
+		"description":"Grisly-as-fuck holocaust thriller. Probably the most dismal film this year, despite that being a very competitive category."
+	},
+	{
+		"name":"Free Space",
+		"poster":"./imgs/bg/freespace.gif",
+		"year":"????",
+		"ratingNameOne":"Free",
+		"ratingOne":5,
+		"ratingNameTwo":"Space",
+		"ratingTwo":5,
+		"description":"Watch a movie of your choice. It can be any that you've wanted to watch but I recommend watching something similar in theme of this year's movies."
+	},
+	{
+		"name":"Little Miss Sunshine",
+		"poster":"./imgs/2019/little-miss-sunshine.webp",
+		"year":"",
+		"ratingNameOne":"Modern Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Memorable",
+		"ratingTwo":4,
+		"description":"Love this one. A little girl and her offbeat family must travel cross-country to enter her into a child pageant. But can their relationships survive the stress?"
+	},
+	{
+		"name":"Thank You for Smoking",
+		"poster":"./imgs/2019/thank-you-for-smoking.webp",
+		"year":"",
+		"ratingNameOne":"Entertaining",
+		"ratingOne":4,
+		"ratingNameTwo":"Philosophical",
+		"ratingTwo":3,
+		"description":"Sharp and snappy parody about a tobacco lobbyist and his journey through politics. Great acting and awesome dialogue."
+	},
+	{
+		"name":"Spotlight",
+		"poster":"./imgs/2019/spotlight.webp",
+		"year":"",
+		"ratingNameOne":"Gritty",
+		"ratingOne":4,
+		"ratingNameTwo":"Biographical",
+		"ratingTwo":4,
+		"description":"This somber journalist drama is about the discovery and investigation of systemic diddling in the Catholic church. Not as dark as it could be, mostly just serious."
+	},
+	{
+		"name":"Moonrise Kingdom",
+		"poster":"./imgs/2019/moonrise-kingdom.webp",
+		"year":"",
+		"ratingNameOne":"Wes Anderson",
+		"ratingOne":5,
+		"ratingNameTwo":"Good Shit",
+		"ratingTwo":5,
+		"description":"This film is about young love, camping, and lots of other stuff. Highly stylized and featuring much of the Wes Anderson crew."
+	},
+	{
+		"name":"Brazil",
+		"poster":"./imgs/2019/brazil.webp",
+		"year":"",
+		"ratingNameOne":"Spectacular",
+		"ratingOne":5,
+		"ratingNameTwo":"Depressing",
+		"ratingTwo":5,
+		"description":"Jesus Christ. It's about a 1984-style dystopia and one poor dumb bastard who gets wrapped up in the system. Miserable but shockingly beautiful at times."
+	},
+	{
+		"name":"Cool World",
+		"poster":"./imgs/2019/cool-world.webp",
+		"year":"",
+		"ratingNameOne":"Weird",
+		"ratingOne":4,
+		"ratingNameTwo":"Forgotten",
+		"ratingTwo":4,
+		"description":"A very strange little piece that's kind of a knock-off of <i>Who Framed Roger Rabbit?</i> Brad Pitt is so super young in this movie and it gets really weird."
+	},
+	{
+		"name":"Yellow Submarine",
+		"poster":"./imgs/2019/yellow-submarine.webp",
+		"year":"",
+		"ratingNameOne":"Beatles",
+		"ratingOne":5,
+		"ratingNameTwo":"Classic",
+		"ratingTwo":4,
+		"description":"A kickass Beatles cartoon. It has adventures, wry british comedy, and SO much Beatles music put to visuals. One hell of a ride."
+	},
+	{
+		"name":"The Departed",
+		"poster":"./imgs/2019/the-departed.webp",
+		"year":"",
+		"ratingNameOne":"Drama",
+		"ratingOne":5,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":3,
+		"description":"This wild crime drama epic follows two cops, both entangled in the dangerous world of the Irish mob. Extremely elaborate and masterfully wrought."
+	},
+	{
+		"name":"Lars and the Real Girl",
+		"poster":"./imgs/2019/lars-and-the-real-girl.webp",
+		"year":"",
+		"ratingNameOne":"Quirky",
+		"ratingOne":4,
+		"ratingNameTwo":"Gosling",
+		"ratingTwo":4,
+		"description":"A quiet and melancholy little slice-of-life drama. Lars is a sad and lonely man who has a psychotic break, and his little town rallies together to help him. Very sweet."
+	},
+	{
+		"name":"Tommy",
+		"poster":"./imgs/2019/tommy.webp",
+		"year":"",
+		"ratingNameOne":"Insane",
+		"ratingOne":5,
+		"ratingNameTwo":"Musical",
+		"ratingTwo":5,
+		"description":"This rock opera is completely batshit insane. It's about a little Hellen Keller boy, and also about post-war London and God. Amazing musical scenes."
+	},
+	{
+		"name":"There Will Be Blood",
+		"poster":"./imgs/2019/there-will-be-blood.webp",
+		"year":"",
+		"ratingNameOne":"Dark",
+		"ratingOne":4,
+		"ratingNameTwo":"Daniel Day Lewis",
+		"ratingTwo":4,
+		"description":"Hardcore drama. An evil man's obsessive journey to build an oil empire. So much stuff happens, it's great."
+	},
+	{
+		"name":"Dogma",
+		"poster":"./imgs/2019/dogma.webp",
+		"year":"",
+		"ratingNameOne":"Comedy",
+		"ratingOne":3,
+		"ratingNameTwo":"Unique",
+		"ratingTwo":5,
+		"description":"A very strange comedy/adventure film about two fallen angels seeking to get back into heaven. Jay and Silent Bob are there."
+	}
+]

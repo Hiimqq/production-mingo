@@ -1,0 +1,252 @@
+[
+	{
+		"name":"The Big Lebowski",
+		"poster":"./imgs/2018/big-lebowski.webp",
+		"year":"1998",
+		"ratingNameOne":"Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Quotable",
+		"ratingTwo":3,
+		"description":"Jeff Bridges plays a californian layabout who is unwillingly drafted into an elaborate crime. Amazing cast, amazing Coens, great film."
+	},
+	{
+		"name":"Monty Python's The Meaning of Life",
+		"poster":"./imgs/2018/meaning-of-life.webp",
+		"year":"1983",
+		"ratingNameOne":"Brilliant",
+		"ratingOne":5,
+		"ratingNameTwo":"Absurdist",
+		"ratingTwo":4,
+		"description":"The Monty Python crew make a solid attempt at explaining the actual meaning of life. A comedy anthology not unlike Flying Circus. One of my favorite films."
+	},
+	{
+		"name":"Drop Dead Gorgeous",
+		"poster":"./imgs/2018/drop-dead.webp",
+		"year":"1999",
+		"ratingNameOne":"Comedy",
+		"ratingOne":3,
+		"ratingNameTwo":"Thriller",
+		"ratingTwo":3,
+		"description":"A mockumentary about beauty pageants that quickly goes way off the rails. Surprisingly quick-witted and pretty dark at times."
+	},
+	{
+		"name":"Best In Show",
+		"poster":"./imgs/2018/best-in-show.webp",
+		"year":"2000",
+		"ratingNameOne":"Cult Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Memorable",
+		"ratingTwo":3,
+		"description":"This mockumentary comes to us from the creators of <i>Spinal Tap</i>. A rich cast of wacky characters all compete for the prize at the national dog show. Very dry."
+	},
+	{
+		"name":"Back to the Future 2",
+		"poster":"./imgs/2018/back-to-the-future-2.webp",
+		"year":"1989",
+		"ratingNameOne":"Iconic",
+		"ratingOne":4,
+		"ratingNameTwo":"Original",
+		"ratingTwo":4,
+		"description":"The sequel to the classic <i>Back to the Future</i>. This movie is wild, lots and lots of travel back and forth through time. Pretty cool special effects and continuity with the previous film."
+	},
+	{
+		"name":"Jumanji",
+		"poster":"./imgs/2018/jumanji.webp",
+		"year":"1995",
+		"ratingNameOne":"Comedy",
+		"ratingOne":4,
+		"ratingNameTwo":"Wild Ride",
+		"ratingTwo":3,
+		"description":"Robin Williams carries this exciting family film on his back. Huge spectacle and batshit story. Very original."
+	},
+	{
+		"name":"Steamboy",
+		"poster":"./imgs/2018/steamboy.webp",
+		"year":"2004",
+		"ratingNameOne":"Dramatic",
+		"ratingOne":4,
+		"ratingNameTwo":"Action",
+		"ratingTwo":3,
+		"description":"An anime steampunk gothic drama adventure. Starts strong and moves pretty quick. Cool vision of a steampunk fantasy world. Neat ending."
+	},
+	{
+		"name":"Rifftrax Twilight",
+		"poster":"./imgs/2018/rifftrax-twilight.webp",
+		"year":"2009",
+		"ratingNameOne":"White-Hot Riffs",
+		"ratingOne":5,
+		"ratingNameTwo":"",
+		"ratingTwo":"",
+		"description":"This movie kind of sucks and the Rifftrax crew make an example of it. One of the best Rifftrax and mighty funny."
+	},
+	{
+		"name":"Blade Runner",
+		"poster":"./imgs/2018/blade-runner.webp",
+		"year":"1982",
+		"ratingNameOne":"Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Literary",
+		"ratingTwo":4,
+		"description":"One hell of a film. This sci-fi masterpiece should be seen at least once by every cinephile. Very long and quite dry."
+	},
+	{
+		"name":"Dark Crystal",
+		"poster":"./imgs/2018/dark-crystal.webp",
+		"year":"1982",
+		"ratingNameOne":"Puppets",
+		"ratingOne":5,
+		"ratingNameTwo":"Actually a pretty good movie",
+		"ratingTwo":3,
+		"description":"Jim Henson made an all-puppet fantasy film and it's incredible. Lush fantasy environment and technically superb with a solid story to carry it."
+	},
+	{
+		"name":"The Basketball Diaries",
+		"poster":"./imgs/2018/basketball-diaries.webp",
+		"year":"1995",
+		"ratingNameOne":"Leo Di'o",
+		"ratingOne":4,
+		"ratingNameTwo":"Rough",
+		"ratingTwo":4,
+		"description":"A bleak and tragic biographical film about some guy who gets crazy hooked on drugs and also gets molested. Pretty great acting from some very young stars. Also briefly features Cotton Hill."
+	},
+	{
+		"name":"Office Space",
+		"poster":"./imgs/2018/office-space.webp",
+		"year":"1999",
+		"ratingNameOne":"Modern Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Memorable",
+		"ratingTwo":3,
+		"description":"Mike Judge puts up another great satire. A frazzled blue-collar guy decides to steal a bunch of money from his employers, all while romancing Jen Aniston. Lots of other great stuff happens."
+	},
+	{
+		"name":"Free Space",
+		"poster":"./imgs/bg/freespace.gif",
+		"year":"????",
+		"ratingNameOne":"Free",
+		"ratingOne":5,
+		"ratingNameTwo":"Space",
+		"ratingTwo":5,
+		"description":"Watch a movie of your choice. It can be any that you've wanted to watch but I recommend watching something similar in theme of this year's movies."
+	},
+	{
+		"name":"Tim and Eric's Billion Dollar Movie",
+		"poster":"./imgs/2018/tim-and-eric.webp",
+		"year":"2012",
+		"ratingNameOne":"Gross",
+		"ratingOne":5,
+		"ratingNameTwo":"Insane",
+		"ratingTwo":4,
+		"description":"This surreal and frankly nasty film is not for the faint of heart. Two weirdos have to pay back a billion dollars, and decide to raise the money by taking on a risky business opportunity. Incredible cast and freakish plot."
+	},
+	{
+		"name":"Truman Show",
+		"poster":"./imgs/2018/truman-show.webp",
+		"year":"1998",
+		"ratingNameOne":"Philosophical",
+		"ratingOne":4,
+		"ratingNameTwo":"Memorable",
+		"ratingTwo":3,
+		"description":"Jim Carrey is an unknowing reality TV star legally adopted by a studio and broadcast 24/7. But the cracks in his reality start showing, and Truman must go on a harrowing journey of self-discovery."
+	},
+	{
+		"name":"Fear and Loathing in Las Vegas",
+		"poster":"./imgs/2018/fear-and-loathing.webp",
+		"year":"1998",
+		"ratingNameOne":"Trippy",
+		"ratingOne":5,
+		"ratingNameTwo":"Quotable",
+		"ratingTwo":4,
+		"description":"This pure-chaos film follows the adventures of Hunter S. Thompson as he goes to Vegas and does a wide assortment of drugs. Surreal, twisted and insane."
+	},
+	{
+		"name":"Snowpiercer",
+		"poster":"./imgs/2018/snowpiercer.webp",
+		"year":"2013",
+		"ratingNameOne":"Violent",
+		"ratingOne":4,
+		"ratingNameTwo":"Mystery",
+		"ratingTwo":3,
+		"description":"An incredibly badass film that's too full of content to describe. Deals with themes of class warfare, fate, control and opression. So violent it's effectively a war movie."
+	},
+	{
+		"name":"The Matrix",
+		"poster":"./imgs/2018/matrix.webp",
+		"year":"1999",
+		"ratingNameOne":"Action",
+		"ratingOne":4,
+		"ratingNameTwo":"Philosphical",
+		"ratingTwo":3,
+		"description":"<i>The Matrix</i> is a landmark in modern sci-fi and a near-perfect film. A misanthropic hacker discovers that his life is a cartesian illusion, and then enters the real world and becomes a warrior-prophet. Groundbreaking special effects."
+	},
+	{
+		"name":"Punch-Drunk Love",
+		"poster":"./imgs/2018/punch-drunk-love.webp",
+		"year":"2002",
+		"ratingNameOne":"Drama",
+		"ratingOne":4,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":3,
+		"description":"A strange and quiet film about a bizarre Adam Sandler man. Beautiful, understated and complex, this one is a gem."
+	},
+	{
+		"name":"Foxcatcher",
+		"poster":"./imgs/2018/foxcatcher.webp",
+		"year":"2014",
+		"ratingNameOne":"Dark",
+		"ratingOne":4,
+		"ratingNameTwo":"True Story",
+		"ratingTwo":4,
+		"description":"This sports drama features some truly incredible acting. It's also one of those where truth is stranger than fiction. Complex and raw, <i>Foxcatcher</i> really sticks with you."
+	},
+	{
+		"name":"Death at a Funeral",
+		"poster":"./imgs/2018/death.webp",
+		"year":"2007",
+		"ratingNameOne":"Quirky",
+		"ratingOne":4,
+		"ratingNameTwo":"Indie",
+		"ratingTwo":3,
+		"description":"This british comedy is a tense and elaborate mess from start to finish. When a family patriarch passes away, his dysfunctional family must come together to survive his funeral. Great stuff."
+	},
+	{
+		"name":"Shadows and Fog",
+		"poster":"./imgs/2018/shadows-and-fog.webp",
+		"year":"1991",
+		"ratingNameOne":"Distinctive",
+		"ratingOne":4,
+		"ratingNameTwo":"Woody Allen",
+		"ratingTwo":4,
+		"description":"What you might call a &quot;lesser&quot; Woody Allen, <i>Shadows and Fog</i> is sort of like a normal Woody Allen but featuring a Jack the Ripper. Great dialogue, crazy acting talent, and a really cool ending."
+	},
+	{
+		"name":"Harvey",
+		"poster":"./imgs/2018/harvey.webp",
+		"year":"1950",
+		"ratingNameOne":"Comedy",
+		"ratingOne":3,
+		"ratingNameTwo":"Original",
+		"ratingTwo":3,
+		"description":"Elwood P. Dowd is an eccentric who believes a giant invisible bunny rabbit is following him around. His family goes to great lengths to deal with this situation, but it turns out you can't fuck with Elwood. Made in the 50's."
+	},
+	{
+		"name":"Pulp Fiction",
+		"poster":"./imgs/2018/pulp-fiction.webp",
+		"year":"1994",
+		"ratingNameOne":"Revolutionary",
+		"ratingOne":5,
+		"ratingNameTwo":"Violent",
+		"ratingTwo":5,
+		"description":"A masterpiece of violence and philosophy. This nonlinear Tarantino is a one-of-a-kind piece, and not for the faint of heart."
+	},
+	{
+		"name":"Place Beyond the Pines",
+		"poster":"./imgs/2018/place-beyond.webp",
+		"year":"2012",
+		"ratingNameOne":"Gritty",
+		"ratingOne":4,
+		"ratingNameTwo":"Epic",
+		"ratingTwo":3,
+		"description":"This generational drama is unforgettable. Takes its time but also takes you to some incredible places. And it's all about Handsome Luke, man."
+	}
+]

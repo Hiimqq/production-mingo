@@ -1,0 +1,252 @@
+[
+	{
+		"name":"Labyrinth",
+		"poster":"./imgs/2023/labyrinth.webp",
+		"year":"1986",
+		"ratingNameOne":"Visionary",
+		"ratingOne":4,
+		"ratingNameTwo":"Technical Wonder",
+		"ratingTwo":5,
+		"description":"Jim Henson dreams up a unique fantasy world and fills it full of puppets, Jennifer Lawrence and David Bowie. A real trip of a film."
+	},
+	{
+		"name":"Dude Where's My Car",
+		"poster":"./imgs/2023/dude-wheres-my-car.webp",
+		"year":"2000",
+		"ratingNameOne":"Stoner Comedy",
+		"ratingOne":5,
+		"ratingNameTwo":"Goofy",
+		"ratingTwo":5,
+		"description":"Stifler and a very yound Ashton Kutcher get high and go on an adventure, probably. A case study of what life was like around the turn of the century."
+	},
+	{
+		"name":"Equilibrium",
+		"poster":"./imgs/2023/equilibrium.webp",
+		"year":"2002",
+		"ratingNameOne":"Badass",
+		"ratingOne":4,
+		"ratingNameTwo":"Philosophical",
+		"ratingTwo":3,
+		"description":"Christian Bale uses gun-fu (no, seriously) to battle an oppressive dystopian future regime. <i>Brazil</i> meets <i>The Matrix</i>."
+	},
+	{
+		"name":"Eastern Promises",
+		"poster":"./imgs/2023/eastern-promises.webp",
+		"year":"2007",
+		"ratingNameOne":"Serious Shit",
+		"ratingOne":4,
+		"ratingNameTwo":"Russian",
+		"ratingTwo":5,
+		"description":"An innocent woman has to work with a cold-blooded killer after she accidently gets mixed up with the russian mob. A gripping drama that doesn't pull any punches."
+	},
+	{
+		"name":"Pee-wee's Big Adventure",
+		"poster":"./imgs/2023/pee-wees-big-adventure.webp",
+		"year":"1985",
+		"ratingNameOne":"Hilarious",
+		"ratingOne":4,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":3,
+		"description":"Pee-wee has to travel across America to rescue his awesome bike in this Tim Burton-directed masterpiece. "
+	},
+	{
+		"name":"The Fury",
+		"poster":"./imgs/2023/the-fury.webp",
+		"year":"1978",
+		"ratingNameOne":"Badass",
+		"ratingOne":5,
+		"ratingNameTwo":"Classic",
+		"ratingTwo":4,
+		"description":"An ex-CIA operative has to use his spy powers to rescue his son from an evil group of psychic terrorists. This De Palma film is beautifully shot and surprisingly batshit."
+	},
+	{
+		"name":"The Even Stevens Movie",
+		"poster":"./imgs/2023/even-stevens-movie.webp",
+		"year":"2003",
+		"ratingNameOne":"DCOM",
+		"ratingOne":4,
+		"ratingNameTwo":"Wacky",
+		"ratingTwo":5,
+		"description":"I have no idea what is in this movie except for Shia LeBeouf and Beans. This is Mingo's second Disney Channel Original Movie and evidently is the final episode of Even Stevens."
+	},
+	{
+		"name":"Ex Machina",
+		"poster":"./imgs/2023/ex-machina.webp",
+		"year":"2014",
+		"ratingNameOne":"Brooding",
+		"ratingOne":4,
+		"ratingNameTwo":"Chill",
+		"ratingTwo":4,
+		"description":"A young programmer gets in over his head when he finds himself face to face with an artifical intelligence. Solid sci-fi flick that's pretty casual."
+	},
+	{
+		"name":"Men Who Stare at Goats",
+		"poster":"./imgs/2023/the-men-who-stare-at-goats.webp",
+		"year":"2009",
+		"ratingNameOne":"Philosophical",
+		"ratingOne":4,
+		"ratingNameTwo":"Star Power",
+		"ratingTwo":5,
+		"description":"George Clooney tells the story of his time in the U.S. Army's MK Ultra-type program. This one's pretty fun and has an all-star ensemble cast."
+	},
+	{
+		"name":"Tenet",
+		"poster":"./imgs/2023/tenet.webp",
+		"year":"2020",
+		"ratingNameOne":"Mindfuck",
+		"ratingOne":5,
+		"ratingNameTwo":"Elaborate",
+		"ratingTwo":5,
+		"description":"Christopher Nolan knocks out another bastard of a movie in this action/sci-fi epic. Time travel like you've never seen it, and maybe on my second watch I'll actually understand it."
+	},
+	{
+		"name":"A.I.",
+		"poster":"./imgs/2023/ai.webp",
+		"year":"2001",
+		"ratingNameOne":"Sad",
+		"ratingOne":4,
+		"ratingNameTwo":"Hardcore",
+		"ratingTwo":5,
+		"description":"Stanley Kubrick's final film (sort of). He started work on it, and then after he died fucking Steven Spielberg took over. A haunting adventure/tragedy."
+	},
+	{
+		"name":"Kung Fu Hustle",
+		"poster":"./imgs/2023/kung-fu-hustle.webp",
+		"year":"2004",
+		"ratingNameOne":"Goofy",
+		"ratingOne":4,
+		"ratingNameTwo":"Solid",
+		"ratingTwo":5,
+		"description":"After getting wrapped up with the mob, a young rogue must navigate his way through a world of martial arts masters and cartoon physics. Surprisingly layered and deep."
+	},
+	{
+		"name":"Free Space",
+		"poster":"./imgs/bg/freespace.gif",
+		"year":"????",
+		"ratingNameOne":"Free",
+		"ratingOne":5,
+		"ratingNameTwo":"Space",
+		"ratingTwo":5,
+		"description":"Watch a movie of your choice. It can be any that you've wanted to watch but I recommend watching something similar in theme of this year's movies."
+	},
+	{
+		"name":"The Farthest",
+		"poster":"./imgs/2023/the-farthest.webp",
+		"year":"2017",
+		"ratingNameOne":"Space",
+		"ratingOne":5,
+		"ratingNameTwo":"Beautiful",
+		"ratingTwo":5,
+		"description":"A damn fine documentary about the Voyager probes. Features some absoultely top-tier space footage."
+	},
+	{
+		"name":"Tropic Thunder",
+		"poster":"./imgs/2023/tropic-thunder.webp",
+		"year":"2008",
+		"ratingNameOne":"Comedy",
+		"ratingOne":5,
+		"ratingNameTwo":"Pretty Good Movie",
+		"ratingTwo":5,
+		"description":"This modern classic ensemble comedy sees a group of actors shoot on location in Vietnam, only to get caught up in an actual war for their survival. Great production value and unbelievable cast."
+	},
+	{
+		"name":"Goodfellas",
+		"poster":"./imgs/2023/goodfellas.webp",
+		"year":"1990",
+		"ratingNameOne":"All-time Great",
+		"ratingOne":5,
+		"ratingNameTwo":"Wild Ride",
+		"ratingTwo":5,
+		"description":"Possibly Scorcese's best film. A deep and personal study of the italian mob. Rest in peace Ray Liotta."
+	},
+	{
+		"name":"Bullet Train",
+		"poster":"./imgs/2023/bullet-train.webp",
+		"year":"2022",
+		"ratingNameOne":"Netflix",
+		"ratingOne":5,
+		"ratingNameTwo":"Action?",
+		"ratingTwo":4,
+		"description":"Never seen this Netflix film, something about assassins on a train. Featuring Brad Pitt and Bad Bunny."
+	},
+	{
+		"name":"Rush Hour 2",
+		"poster":"./imgs/2023/rush-hour-2.webp",
+		"year":"2001",
+		"ratingNameOne":"Action",
+		"ratingOne":4,
+		"ratingNameTwo":"Comedy",
+		"ratingTwo":4,
+		"description":"Sequel to the very fun <i>Rush Hour</i>, this time they're in China! Expect awesome stunts and fish-out-of-water comedy."
+	},
+	{
+		"name":"Kiki's Delivery Service",
+		"poster":"./imgs/2023/kikis-delivery.webp",
+		"year":"1989",
+		"ratingNameOne":"Anime",
+		"ratingOne":5,
+		"ratingNameTwo":"Slice of Life",
+		"ratingTwo":4,
+		"description":"Gotta love the Miyazaki films. Features a young witch and a cat. Seems pretty chill."
+	},
+	{
+		"name":"The Fifth Element",
+		"poster":"./imgs/2023/the-fifth-element.webp",
+		"year":"1997",
+		"ratingNameOne":"Visionary",
+		"ratingOne":4,
+		"ratingNameTwo":"Badass",
+		"ratingTwo":4,
+		"description":"This manic sci-fi is known for its insane worldbuilding and tight execution. Bruce Willis and Mila Jovovich kick ass, and Chris Tucker is there, too. Also Gary Oldman."
+	},
+	{
+		"name":"The Boodock Saints",
+		"poster":"./imgs/2023/the-boondock-saints.webp",
+		"year":"1999",
+		"ratingNameOne":"Badass",
+		"ratingOne":4,
+		"ratingNameTwo":"Comedy",
+		"ratingTwo":4,
+		"description":"Two brothers become folk heros by assassinating criminals and generally being badasses. This a indie action/comedy is notoriously fun. "
+	},
+	{
+		"name":"Rubber",
+		"poster":"./imgs/2023/rubber.webp",
+		"year":"2010",
+		"ratingNameOne":"Bizarre",
+		"ratingOne":5,
+		"ratingNameTwo":"Mindfuck",
+		"ratingTwo":4,
+		"description":"This one is a hell of a thing. Experimental, violent and more than a little uncomfortable to watch."
+	},
+	{
+		"name":"Bernie",
+		"poster":"./imgs/2023/bernie.webp",
+		"year":"2011",
+		"ratingNameOne":"Heartfelt",
+		"ratingOne":4,
+		"ratingNameTwo":"True Story",
+		"ratingTwo":5,
+		"description":"Jack Black kills it in this touching true-crime drama about a mortician who makes a big mistake. This movie is sad, sweet, and extremely Texas. True story, too."
+	},
+	{
+		"name":"The Way of the Dragon",
+		"poster":"./imgs/2023/the-way-of-the-dragon.webp",
+		"year":"1972",
+		"ratingNameOne":"Badass",
+		"ratingOne":5,
+		"ratingNameTwo":"Bruce Lee",
+		"ratingTwo":5,
+		"description":""
+	},
+	{
+		"name":"Up in Smoke",
+		"poster":"./imgs/2023/up-in-smoke.webp",
+		"year":"1978",
+		"ratingNameOne":"Stoner Comedy",
+		"ratingOne":5,
+		"ratingNameTwo":"Classic",
+		"ratingTwo":4,
+		"description":"Cheech and Chong, dude! I don't remember anything about this movie except that it's the kind of funny they don't make anymore."
+	}
+]

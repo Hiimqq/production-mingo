@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MINGO</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<meta name="description" content="A list challenge of memorable movies, hand selected by Jim Crowly">
+
+		<link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='screen';">
+		<link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='screen';">
+
+		<script type="module" src="./js/bootstrap.min.js" defer></script>
+		<script type="text/javascript" src="./js/confetti.js" defer></script>
+		<script type="module" src="./js/main.js" defer></script>
+		
+		<style>
+			@keyframes bounce { 0%{ transform:scale(1,1) translateY(0); } 10%{ transform:scale(1.1,.9) translateY(0); } 30%{ transform:scale(.9,1.1)   translateY(-55px);} 50%{ transform:scale(1.05,.95) translateY(0); } 58%{ transform:scale(1,1) translateY(-7px); } 65%{ transform:scale(1,1) translateY(0);} 100%{ transform:scale(1,1) translateY(0);} }
+			.bounce1 { animation: bounce 1s ease infinite; color:var(--bs-red); }
+			.bounce2 { animation: bounce 1s ease infinite .1s; color:var(--bs-orange); }
+			.bounce3 { animation: bounce 1s ease infinite .2s; color:var(--bs-yellow); }
+			.bounce4 { animation: bounce 1s ease infinite .3s; color:var(--bs-green); }
+			.bounce5 { animation: bounce 1s ease infinite .4s; color:var(--bs-blue); }
+			.b, .o, .u, .n, .c, .e { color: #4cc9f0; text-shadow: 0 3px #4361ee, 0 5px #4361ee, 0 7px #4361ee; }
+			.bouncing-text { position: relative; display: flex; font-size: 70px; font-family: arial black; }
+			.loader {display:flex; flex-direction:column; position:fixed; height:100vh; width:100%; align-items:center; justify-content:center; background:#fff; transition:all 0.3s; z-index:1100;}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<!-- Loading Screen -->
+			<div class="loader">
+				<div class="bouncing-text">
+					<div class="bounce1">M</div>
+					<div class="bounce2">I</div>
+					<div class="bounce3">N</div>
+					<div class="bounce4">G</div>
+					<div class="bounce5">O</div>
+				</div>
+				<noscript>
+					Javascript is required for this site. Please enable Javascript in your web browser.
+					<style> div.ring { display:none; } noscript { color: white; padding-top: 20px; }</style>
+				</noscript>
+			</div>
+
+			<!-- Background Animation -->
+ 			<div id="background"></div>
+
+			<!-- Movie Information Modal -->
+			<div class="modal fade" id="movieInfo" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content dark">
+				<button class="carousel-control-prev position-absolute float-left" type="button" data-bs-target="#carouselMovieInfo" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Left</span>
+				</button>
+				<button class="carousel-control-up position-absolute" type="button">
+					<span class="carousel-control-prev-icon rotate-45" aria-hidden="true"></span>
+					<span class="visually-hidden">Up</span>
+				</button>
+				<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+				<div class="carousel modal-body carousel-fade" id="carouselMovieInfo" data-bs-interval="false" data-bs-ride="carousel" data-bs-touch="false">
+					<div class="carousel-inner"></div>
+					<div class="carousel-indicators"></div>
+				</div>
+				<button class="carousel-control-down position-absolute" type="button">
+					<span class="carousel-control-next-icon rotate-45" aria-hidden="true"></span>
+					<span class="visually-hidden">Down</span>
+				</button>
+				<button class="carousel-control-next position-absolute float-right" type="button" data-bs-target="#carouselMovieInfo" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Right</span>
+				</button>
+			</div></div></div>
+
+			<!-- About Mingo Modal -->
+			<div class="modal fade" id="about" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">About</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>MINGO is a summer tradition that started as a community effort to revisit select internalized movies that just don’t get made anymore and once a year people gather to celebrate the past & cinema classics that just won’t leave their brain.</p>
+				</div>
+			</div></div></div>
+
+			<!-- Rules of Mingo Modal -->
+			<div class="modal fade" id="rules" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Rules</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p> The rules are simple, with many ways to play. Achieve a MINGO by watching a set of five movies in a line (including diagonal) within the month. Choose the MINGO that best suits you and prepare yourself as best you can!</p>
+					<u><h4>Classic</h4></u><p>Choose any line of movies and watch them all. </p>
+					<u><h4>Supreme</h4></u><p>Choose any line of movies intersecting the freespace but substitute the freespace with a movie of your choice!</p>
+					<u><h4>Free-Form</h4></u><p>Choose any five movies, then watch them in any order.</p>
+					<u><h4>The Forbidden MINGO</h4></u><p>Choose any TWO lines of movies and watch them all.</p>
+				</div>
+			</div></div></div>
+
+			<!-- Contact Mingo Modal -->
+			<div class="modal fade" id="contact" tabindex="-1">	<div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Contact</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p> Under Construction...</p>
+				</div>
+			</div></div></div>
+		</header>
+
+		<main class="transition-fade justify-content-center mx-0 w-100 h-100">
+			<table id="mingo-card">
+				<thead>
+				<tr><th colspan="5">
+					<!-- Navigation -->
+					<nav class="w-100 m-0 p-0">
+						<div class="carousel carousel-dark slide d-flex w-100" id="historyCarouselControls" data-bs-interval="false">
+							<button class="carousel-control-prev position-static" type="button" data-bs-target="#historyCarouselControls" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<div class="carousel-inner" role="group">
+								<div class="carousel-item btn-group">
+									<a id="2018" class="btn nav-year">2018</a>
+									<a id="2019" class="btn nav-year">2019</a>
+									<a id="2020" class="btn nav-year">2020</a>
+								</div>
+								<div class="carousel-item btn-group active">
+									<a id="2021" class="btn nav-year">2021</a>
+									<a id="2022" class="btn nav-year">2022</a>
+									<a id="2023" class="btn nav-year">2023</a>
+								</div>
+							</div>
+							<button class="carousel-control-next position-static" type="button" data-bs-target="#historyCarouselControls" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</nav>
+				</th></tr>
+				<tr>
+					<th><h2 class="M wiggle">M</h2></th>
+					<th><h2 class="I wiggle">I</h2></th>
+					<th><h2 class="N wiggle">N</h2></th>
+					<th><h2 class="G wiggle">G</h2></th>
+					<th><h2 class="O wiggle">O</h2></th>
+				</tr>
+				</thead>
+				<tbody id="mingo-body">
+					<tr>
+						<td class="M"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="0"></button></a></div><span></span></div></td>
+						<td class="I"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="1"></button></a></div><span></span></div></td>
+						<td class="N"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="2"></button></a></div><span></span></div></td>
+						<td class="G"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="3"></button></a></div><span></span></div></td>
+						<td class="O"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="4"></button></a></div><span></span></div></td>
+					</tr>
+					<tr>
+						<td class="M"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="5"></button></a></div><span></span></div></td>
+						<td class="I"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="6"></button></a></div><span></span></div></td>
+						<td class="N"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="7"></button></a></div><span></span></div></td>
+						<td class="G"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="8"></button></a></div><span></span></div></td>
+						<td class="O"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="9"></button></a></div><span></span></div></td>
+					</tr>
+					<tr>
+						<td class="M"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="10"></button></a></div><span></span></div></td>
+						<td class="I"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="11"></button></a></div><span></span></div></td>
+						<td class="N Free"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="12"></button></a></div><span></span></div></td>
+						<td class="G"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="13"></button></a></div><span></span></div></td>
+						<td class="O"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="14"></button></a></div><span></span></div></td>
+					</tr>
+					<tr>
+						<td class="M"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="15"></button></a></div><span></span></div></td>
+						<td class="I"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="16"></button></a></div><span></span></div></td>
+						<td class="N"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="17"></button></a></div><span></span></div></td>
+						<td class="G"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="18"></button></a></div><span></span></div></td>
+						<td class="O"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="19"></button></a></div><span></span></div></td>
+					</tr>
+					<tr>
+						<td class="M"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="20"></button></a></div><span></span></div></td>
+						<td class="I"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="21"></button></a></div><span></span></div></td>
+						<td class="N"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="22"></button></a></div><span></span></div></td>
+						<td class="G"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="23"></button></a></div><span></span></div></td>
+						<td class="O"><div><div><a data-bs-toggle="modal" data-bs-target="#movieInfo"><button data-bs-target="#carouselMovieInfo" data-bs-slide-to="24"></button></a></div><span></span></div></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr><td colspan="5">
+						<footer class="footer">
+							<div class="footer-txt">
+								<a href="#" data-bs-toggle="modal" data-bs-target="#about">About</a> • 
+								<a href="#" data-bs-toggle="modal" data-bs-target="#rules">Rules</a> • 
+								<a href="#" data-bs-toggle="modal" data-bs-target="#contact">Contact</a> • 
+								&copy; MINGO 2018-<script>document.write(new Date().getFullYear())</script>
+							</div>
+						</footer>
+					</td></tr>
+				</tfoot>
+			</table>
+		</main>
+	</body>
+</html>

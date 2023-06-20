@@ -1,0 +1,252 @@
+[
+	{
+		"name":"Rush Hour",
+		"poster":"./imgs/2022/rush-hour.webp",
+		"year":1998,
+		"ratingNameOne":"Action",
+		"ratingOne":4,
+		"ratingNameTwo":"Fun Movie",
+		"ratingTwo":5,
+		"description":"A wacky action-adventure where Chris Tucker and Jackie Chan team up to fight crime and rescue a little girl, all while trying to come to terms with each other's wildly different ideas of law enforcement."
+	},
+	{
+		"name":"Get Out",
+		"poster":"./imgs/2022/get-out.webp",
+		"year":2017,
+		"ratingNameOne":"Modern Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Spooky",
+		"ratingTwo":4,
+		"description":"Something weird's going on in this beautifully executed sci-fi/horror from Jordan Peele. Slow, quiet, and very creepy."
+	},
+	{
+		"name":"Scott Pilgrim vs the World",
+		"poster":"./imgs/2022/scott-pilgrim.webp",
+		"year":2010,
+		"ratingNameOne":"Stlyish",
+		"ratingOne":4,
+		"ratingNameTwo":"Action",
+		"ratingTwo":3,
+		"description":"Michael Cera finds himself in a love octagon that gets surpringly comic-book violent. Lush visuals set this one aprt from its peers."
+	},
+	{
+		"name":"Space Jam",
+		"poster":"./imgs/2022/space-jam.webp",
+		"year":1996,
+		"ratingNameOne":"Michael Jordan",
+		"ratingOne":5,
+		"ratingNameTwo":"90s",
+		"ratingTwo":5,
+		"description":"You know you want to watch this endearing classic, wherein Michael Jordan goes to Looney Tunes land and saves a basketball team or something."
+	},
+	{
+		"name":"Braveheart",
+		"poster":"./imgs/2022/braveheart.webp",
+		"year":1995,
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":4,
+		"ratingNameTwo":"Inspiring",
+		"ratingTwo":5,
+		"description":"Mel Gibson goes apeshit and starts a war with the british in this brutal-ass historical drama. Great acting and a super authentic production."
+	},
+	{
+		"name":"A Scanner Darkly",
+		"poster":"./imgs/2022/a-scanner-darkly.webp",
+		"year":2006,
+		"ratingNameOne":"Adaptation",
+		"ratingOne":4,
+		"ratingNameTwo":"Mindfuck",
+		"ratingTwo":4,
+		"description":"Keanu Reeves stars as a half-animated detective in this modern adaptation of a Philip Dick novel. I expect lots of drugs, madness and paranoia."
+	},
+	{
+		"name":"The Godfather",
+		"poster":"./imgs/2022/the-godfather.webp",
+		"year":1972,
+		"ratingNameOne":"One of the Best",
+		"ratingOne":5,
+		"ratingNameTwo":"Acting",
+		"ratingTwo":5,
+		"description":"It's hard to find a more iconic film than The Godfather. An epic and unforgettable mafia drama, widely recognized as a full-blown masterpiece."
+	},
+	{
+		"name":"Walk Hard: The Dewey Cox Story",
+		"poster":"./imgs/2022/walk-hard.webp",
+		"year":2007,
+		"ratingNameOne":"Judd Apatow",
+		"ratingOne":5,
+		"ratingNameTwo":"John C. Reilly",
+		"ratingTwo":5,
+		"description":"This film chronicles the life of fictional musician Dewey Cox as he grapples with the stress of fame. Cameos and jokes abound in this surprisingly thoughtful parody."
+	},
+	{
+		"name":"The Ballad of Buster Scruggs",
+		"poster":"./imgs/2022/ballad-of-buster-scruggs.webp",
+		"year":2018,
+		"ratingNameOne":"Stylish",
+		"ratingOne":5,
+		"ratingNameTwo":"Coen Bros.",
+		"ratingTwo":5,
+		"description":"I know almost nothing about this movie. Based on what I've seen, my suspicion is that this one is bizarre (and possibly musical)."
+	},
+	{
+		"name":"Rat Race",
+		"poster":"./imgs/2022/rat-race.webp",
+		"year":2001,
+		"ratingNameOne":"Great Set Pieces",
+		"ratingOne":5,
+		"ratingNameTwo":"Good Movie",
+		"ratingTwo":3,
+		"description":"There's some great shit in this weird ensemble B-movie that's a remake of some old movie no one's ever seen. I recommend getting wasted before you watch."
+	},
+	{
+		"name":"Who Framed Roger Rabbit",
+		"poster":"./imgs/2022/who-framed-roger-rabbit.webp",
+		"year":1988,
+		"ratingNameOne":"Technical Marvel",
+		"ratingOne":5,
+		"ratingNameTwo":"Great Film",
+		"ratingTwo":5,
+		"description":"Bob Hoskins kicks ass in this one-of-a-kind detective drama. Mixes comedy and tragedy, noir and cartoon, Disney and Looney Tunes (et al)."
+	},
+	{
+		"name":"Darkman",
+		"poster":"./imgs/2022/darkman.webp",
+		"year":1990,
+		"ratingNameOne":"Sam Raimi",
+		"ratingOne":5,
+		"ratingNameTwo":"Wacky",
+		"ratingTwo":4,
+		"description":"The only super hero film that I actually love, Darkman is like the first Spider-Man on acid. Liam Neeson plays a brilliant scientist who gets horribly attacked by the mob, and then uses his genius to set things right."
+	},
+	{
+		"name":"Free Space",
+		"poster":"./imgs/bg/freespace.gif",
+		"year":"????",
+		"ratingNameOne":"Free",
+		"ratingOne":5,
+		"ratingNameTwo":"Space",
+		"ratingTwo":5,
+		"description":"Watch a movie of your choice. It can be any that you've wanted to watch but I recommend watching something similar in theme of this year's movies."
+	},
+	{
+		"name":"The Producers",
+		"poster":"./imgs/2022/the-producers.webp",
+		"year":1967,
+		"ratingNameOne":"Mel Brooks",
+		"ratingOne":5,
+		"ratingNameTwo":"Clever",
+		"ratingTwo":5,
+		"description":"Two movie \"producers\" realize that a terrible film can make more money than a good one. The result is a wacky, fast-paced stunner of comedy gold."
+	},
+	{
+		"name":"Nightbreed",
+		"poster":"./imgs/2022/nightbreed.webp",
+		"year":1990,
+		"ratingNameOne":"Clive Barker",
+		"ratingOne":4,
+		"ratingNameTwo":"Demented",
+		"ratingTwo":5,
+		"description":"I have no idea how to describe this film. It's about a monster man who starts a monster war, and it's one of the most bizarre and chaotic movies I've ever seen."
+	},
+	{
+		"name":"Sleeper",
+		"poster":"./imgs/2022/sleeper.webp",
+		"year":1973,
+		"ratingNameOne":"Iconic",
+		"ratingOne":5,
+		"ratingNameTwo":"One of the Best",
+		"ratingTwo":4,
+		"description":"One of Woody Allen's most memorable comedies. A nebbish New Yorker gets frozen and re-thawed in the distant future--and <i>then</i> inadvertently stumbles into a wild adventure."
+	},
+	{
+		"name":"Grave of the Fireflies",
+		"poster":"./imgs/2022/grave-of-the-fireflies.webp",
+		"year":1988,
+		"ratingNameOne":"Well-Reviewed",
+		"ratingOne":5,
+		"ratingNameTwo":"Quality Anime",
+		"ratingTwo":5,
+		"description":"Two kids in Japan get firebombed out of their home during WWII. I'm told it's very sad. Though I've never seen it, I've heard it mentioned numerous times and always fondly."
+	},
+	{
+		"name":"Beavis and Butthead Do America",
+		"poster":"./imgs/2022/beavis-and-butt-head-do-america.webp",
+		"year":1996,
+		"ratingNameOne":"Assinine",
+		"ratingOne":5,
+		"ratingNameTwo":"Hilarious",
+		"ratingTwo":4,
+		"description":"How do you extend the relatively simple format of Beavis and Butthead into a feature film? Mike Judge found a way. This movie also counts as my tribute to Bruce Willis, who retired from acting this year. God bless, Bruce."
+	},
+	{
+		"name":"Once Upon a Time... in Hollywood",
+		"poster":"./imgs/2022/once-upon-a-time-in-hollywood.webp",
+		"year":2019,
+		"ratingNameOne":"Tarantino",
+		"ratingOne":5,
+		"ratingNameTwo":"Beautiful",
+		"ratingTwo":5,
+		"description":"<b>WARNING: make sure you know a little about Charles Manson going in.</b> Yet another late-career masterpiece from Quentin Tarantino. This incredible piece takes its time and sets up one of my favorite endings in any movie. A must-watch."
+	},
+	{
+		"name":"Terminator 2: Judgement Day",
+		"poster":"./imgs/2022/terminator-2.webp",
+		"year":1991,
+		"ratingNameOne":"Action",
+		"ratingOne":5,
+		"ratingNameTwo":"Sci-Fi",
+		"ratingTwo":5,
+		"description":"Now the Terminator has to fight a second, even more badass terminator. Often condsidered the archetypal action/sci-fi film."
+	},
+	{
+		"name":"Parasite",
+		"poster":"./imgs/2022/parasite.webp",
+		"year":2019,
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":4,
+		"ratingNameTwo":"Masterpiece",
+		"ratingTwo":5,
+		"description":"A lower-class korean family cons their way into the home of one much richer. Easily one of the best films of the last decade, and one I genuinely love."
+	},
+	{
+		"name":"Mary Poppins",
+		"poster":"./imgs/2022/mary-poppins.webp",
+		"year":1964,
+		"ratingNameOne":"Classic",
+		"ratingOne":5,
+		"ratingNameTwo":"Disney Magic",
+		"ratingTwo":5,
+		"description":"One of the older Disney classics, I think this one's about a magical nanny who comes to hang out with some british kids. Haven't seen it in probably twenty five years."
+	},
+	{
+		"name":"World's Greatest Dad",
+		"poster":"./imgs/2022/worlds-greatest-dad.webp",
+		"year":2009,
+		"ratingNameOne":"Dark Comedy",
+		"ratingOne":4,
+		"ratingNameTwo":"Touching",
+		"ratingTwo":4,
+		"description":"Robin Williams is a father whose son makes a tragic mistake--but soon the cover-up puts Williams in a very strange situation."
+	},
+	{
+		"name":"Blue Ruin",
+		"poster":"./imgs/2022/blue-ruin.webp",
+		"year":2013,
+		"ratingNameOne":"Sad",
+		"ratingOne":4,
+		"ratingNameTwo":"Fucked Up",
+		"ratingTwo":4,
+		"description":"A man whose parents are murdered can't move past the trauma. But when the killer is released years later, our reluctant anti-hero decides to exact revenge. A fascinating and melancholy indie character study."
+	},
+	{
+		"name":"Muppet Treasure Island",
+		"poster":"./imgs/2022/muppet-treasure-island.webp",
+		"year":1996,
+		"ratingNameOne":"Awesome Adaptation",
+		"ratingOne":5,
+		"ratingNameTwo":"Musical",
+		"ratingTwo":4,
+		"description":"The classic tale of Treasure Island, re-imagined for a modern audience. Get ready to watch Miss Piggy compete with Tim Curry for the most over-the-top performance."
+	}
+]

@@ -1,0 +1,252 @@
+[
+	{
+		"name":"Brick",
+		"poster":"./imgs/2020/brick.webp",
+		"year":"2005",
+		"ratingNameOne":"Badass",
+		"ratingOne":4,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":4,
+		"description":"Awesome noir detective drama with a modern twist. Joseph Gordon-Levitt is the smart loner at school who has to solve a murder."
+	},
+	{
+		"name":"Heavy Metal",
+		"poster":"./imgs/2020/heavy-metal.webp",
+		"year":"1981",
+		"ratingNameOne":"Wild Stuff",
+		"ratingOne":4,
+		"ratingNameTwo":"Music",
+		"ratingTwo":4,
+		"description":"Wild animated anthology. Pulp fiction/fantasy masterpiece featuring a pretty rad soundtrack."
+	},
+	{
+		"name":"Rushmore",
+		"poster":"./imgs/2020/rushmore.webp",
+		"year":"1998",
+		"ratingNameOne":"Wes Anderson",
+		"ratingOne":5,
+		"ratingNameTwo":"Touching",
+		"ratingTwo":4,
+		"description":"There's a lot going on in this one. Sweet, a little sad, very funny. Protagonist is a playwright, so you get little plays within the movie, it's awesome."
+	},
+	{
+		"name":"Natural Born Killers",
+		"poster":"./imgs/2020/natural-born-killers.webp",
+		"year":"1994",
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":5,
+		"ratingNameTwo":"Modern Classic",
+		"ratingTwo":4,
+		"description":"Mickey and Mallory Knox go on a nationwide killing spree and wind up as unwitting folk heroes. This movie glorifies senseless violence in a truly unique way."
+	},
+	{
+		"name":"Goodburger",
+		"poster":"./imgs/2020/good-burger.webp",
+		"year":"1997",
+		"ratingNameOne":"Nostalgia",
+		"ratingOne":4,
+		"ratingNameTwo":"Surprisingly Good",
+		"ratingTwo":4,
+		"description":"I'm a dude, he's a dude, she's a dude, and we're all dudes, hey."
+	},
+	{
+		"name":"Into the Inferno -OR- Encounters at the End of the World",
+		"poster":"./imgs/2020/encounters-at-the-end-of-the-world.webp",
+		"year":"2016",
+		"ratingNameOne":"Beautiful Volcanoes",
+		"ratingOne":5,
+		"ratingNameTwo":"Beautiful Glaciers",
+		"ratingTwo":5,
+		"description":"Entry to come."
+	},
+	{
+		"name":"Teenage Mutant Ninja Turtles",
+		"poster":"./imgs/2020/teenage-mutant-ninja-turtles.webp",
+		"year":"1990",
+		"ratingNameOne":"Solid",
+		"ratingOne":4,
+		"ratingNameTwo":"Practical Effects",
+		"ratingTwo":4,
+		"description":"An entertaining and technically impressive TMNT adaptation. Better than I was expecting it to be, and weirder too."
+	},
+	{
+		"name":"12 Monkeys",
+		"poster":"./imgs/2020/12-monkeys.webp",
+		"year":"1995",
+		"ratingNameOne":"Close to Home",
+		"ratingOne":5,
+		"ratingNameTwo":"Nuts",
+		"ratingTwo":4,
+		"description":"This movie is a fucking nightmare. Grimy, brutal and hopeless, with some really cool time travel dynamics. "
+	},
+	{
+		"name":"Raising Arizona",
+		"poster":"./imgs/2020/raising-arizona.webp",
+		"year":"1987",
+		"ratingNameOne":"Coen Bros.",
+		"ratingOne":5,
+		"ratingNameTwo":"Ascended Nick Cage",
+		"ratingTwo":4,
+		"description":"A simple but beautiful American opera. An ex-criminal and his prison guard wife cannot conceive, and so decide to steal a baby (with the best of intentions)."
+	},
+	{
+		"name":"Her",
+		"poster":"./imgs/2020/her.webp",
+		"year":"2013",
+		"ratingNameOne":"Thought Experiment",
+		"ratingOne":5,
+		"ratingNameTwo":"Sad",
+		"ratingTwo":4,
+		"description":"In an increasingly isolating future, a man falls in love with his new A.I. operating system. This is not a quirky indie romance, at all. Covers some serious shit."
+	},
+	{
+		"name":"Death to Smoochy",
+		"poster":"./imgs/2020/death-to-smoochy.webp",
+		"year":"2002",
+		"ratingNameOne":"Wacky",
+		"ratingOne":4,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":4,
+		"description":"An insane and frenetic film about children's entertainment and corruption. Great cast, batshit crazy, directed by Danny DeVito."
+	},
+	{
+		"name":"Idiocracy",
+		"poster":"./imgs/2020/idiocracy.webp",
+		"year":"2006",
+		"ratingNameOne":"Modern Classic",
+		"ratingOne":4,
+		"ratingNameTwo":"Mike Judge",
+		"ratingTwo":5,
+		"description":"Luke Wilson gets transported to a future where stupidity has become the norm. Hilarious shit from the creator of <i>King of the Hill</i>."
+	},
+	{
+		"name":"Free Space",
+		"poster":"./imgs/bg/freespace.gif",
+		"year":"????",
+		"ratingNameOne":"Free",
+		"ratingOne":5,
+		"ratingNameTwo":"Space",
+		"ratingTwo":5,
+		"description":"Watch a movie of your choice. It can be any that you've wanted to watch but I recommend watching something similar in theme of this year's movies."
+	},
+	{
+		"name":"Howl's Moving Castle",
+		"poster":"./imgs/2020/howls-moving-castle.webp",
+		"year":"2004",
+		"ratingNameOne":"Anime",
+		"ratingOne":5,
+		"ratingNameTwo":"Billy Crystal",
+		"ratingTwo":3,
+		"description":"A lush and gorgeous animated fantasy from Studio Ghibli. I strongly recommend getting the dubbed version to hear Christian Bale voice act a shape-shifting bird wizard."
+	},
+	{
+		"name":"Singin' in the Rain",
+		"poster":"./imgs/2020/singin-in-the-rain.webp",
+		"year":"1952",
+		"ratingNameOne":"Old as Hell",
+		"ratingOne":5,
+		"ratingNameTwo":"Spectacle",
+		"ratingTwo":5,
+		"description":"Legendary song-and-dance musical that's truly a sight to behold. You want to see some talented-ass dancers, this is the one. Also it's pretty funny."
+	},
+	{
+		"name":"Groundhog Day",
+		"poster":"./imgs/2020/groundhog-day.webp",
+		"year":"1993",
+		"ratingNameOne":"Cosmic Horror",
+		"ratingOne":3,
+		"ratingNameTwo":"Good as Hell",
+		"ratingTwo":5,
+		"description":"Bill Murray plays a kind-of-a-dick newscaster who finds himself caught in a vicious time loop. More of a moral comedy than a sci-fi. Great movie."
+	},
+	{
+		"name":"The Big Short",
+		"poster":"./imgs/2020/the-big-short.webp",
+		"year":"2015",
+		"ratingNameOne":"Acting Talent",
+		"ratingOne":5,
+		"ratingNameTwo":"True Story",
+		"ratingTwo":4,
+		"description":"A powerful and fast-paced look into the causes and fallout of the '08 housing crash. So many great actors it's hard to remember them all."
+	},
+	{
+		"name":"The Lighthouse",
+		"poster":"./imgs/2020/the-lighthouse.webp",
+		"year":"2019",
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":4,
+		"ratingNameTwo":"Cosmic Horror",
+		"ratingTwo":3,
+		"description":"Robert Pattinson and Willem DaFoe hash it out in a lighthouse. A bunch of grievously brutal shit happens to them for reasons that are never made clear. Surreal and miserable."
+	},
+	{
+		"name":"Annie Hall",
+		"poster":"./imgs/2020/annie-hall.webp",
+		"year":"1977",
+		"ratingNameOne":"Drama",
+		"ratingOne":4,
+		"ratingNameTwo":"Influential",
+		"ratingTwo":5,
+		"description":"A complicated Woody Allen gets wrapped up in a complicated relationship with a complicated woman (Diane Keaton). Masterwork romance/comedy."
+	},
+	{
+		"name":"Raging Bull",
+		"poster":"./imgs/2020/raging-bull.webp",
+		"year":"1980",
+		"ratingNameOne":"Top-Tier Movie",
+		"ratingOne":5,
+		"ratingNameTwo":"Scorsese",
+		"ratingTwo":5,
+		"description":"A frontrunner for my all-time-favorite film. We follow a wrathful boxer (DeNiro) through the different eras of his career as he vies for the championship belt."
+	},
+	{
+		"name":"Team America: World Police",
+		"poster":"./imgs/2020/team-america-world-police.webp",
+		"year":"2004",
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":4,
+		"ratingNameTwo":"Better with Each Passing Year",
+		"ratingTwo":5,
+		"description":"The best damn marionette military comedy ever made. A talented actor joins the World Police and goes undercover to foil a worldwide terrorist attack. From the creators of South Park."
+	},
+	{
+		"name":"Innerspace",
+		"poster":"./imgs/2020/innerspace.webp",
+		"year":"1987",
+		"ratingNameOne":"Fantastic Voyage",
+		"ratingOne":5,
+		"ratingNameTwo":"Action-Packed",
+		"ratingTwo":3,
+		"description":"Due to industrial espionage, a pilot has to shrink super tiny and pilot a ship through some guy's bloodstream. This remake of <i>Fantastic Voyage</i> spins more as an adventure/comedy. Directed by Joe Dante (<i>Gremlins</i>)."
+	},
+	{
+		"name":"Superbad",
+		"poster":"./imgs/2020/superbad.webp",
+		"year":"2007",
+		"ratingNameOne":"All-Star Cast",
+		"ratingOne":4,
+		"ratingNameTwo":"Modern Classic",
+		"ratingTwo":4,
+		"description":"Two goofballs go on an adventure to buy alcohol so they can get laid at a graduation party. Well-structured and constantly funny."
+	},
+	{
+		"name":"Bad Times at the El Royale",
+		"poster":"./imgs/2020/bad-times-at-the-el-royale.webp",
+		"year":"2018",
+		"ratingNameOne":"Quirky",
+		"ratingOne":4,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":4,
+		"description":"A wild and layered crime drama set in this crazy old hotel. Comedy, drama, and a just touch of horror."
+	},
+	{
+		"name":"Color Out of Space",
+		"poster":"./imgs/2020/the-colour-out-of-space.webp",
+		"year":"2019",
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":5,
+		"ratingNameTwo":"Good",
+		"ratingTwo":3,
+		"description":"<b>Bizarre</b> cosmic horror starring Nick Cage. Loosely adapted from an H.P. Lovecraft story, some weirdo alien thing comes from space and starts corrupting the world around it. Lots of weird shit happens."
+	}
+]

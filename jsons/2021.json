@@ -1,0 +1,252 @@
+[
+	{
+		"name":"The Guest",
+		"poster":"./imgs/2021/the-guest.webp",
+		"year":2014,
+		"ratingNameOne":"Badass",
+		"ratingOne":5,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":4,
+		"description":"A stranger arrives at a peaceful suburban home claiming a link to the family's deceased son--but this situation quickly takes a turn to the extreme. A wild ride of a film with a great soundtrack."
+	},
+	{
+		"name":"Austin Powers: the Spy Who Shagged Me",
+		"poster":"./imgs/2021/austin-powers.webp",
+		"year":1999,
+		"ratingNameOne":"Mike Myers",
+		"ratingOne":5,
+		"ratingNameTwo":"Nuts",
+		"ratingTwo":4,
+		"description":"Austin Powers is back on the case when Doctor Evil travels through time to steal his mojo. This film introduced many of  the most memorable characters in the series and is still pretty damn hilarious."
+	},
+	{
+		"name":"The Tree of Life",
+		"poster":"./imgs/2021/the-tree-of-life.webp",
+		"year":2011,
+		"ratingNameOne":"Art Film",
+		"ratingOne":5,
+		"ratingNameTwo":"Surreal",
+		"ratingTwo":4,
+		"description":"An undeniable epic of a film, <i>The Tree of Life</i> is truly a portrait of life itself. Breathtaking visuals and heavy themes. Extremely dry."
+	},
+	{
+		"name":"Observe and Report",
+		"poster":"./imgs/2021/observe-and-report.webp",
+		"year":2009,
+		"ratingNameOne":"Fucked Up",
+		"ratingOne":4,
+		"ratingNameTwo":"Bizarre",
+		"ratingTwo":3,
+		"description":"Seth Rogen plays a mentally ill security guard who dreams of being a police officer. But along the way, he goes through some pretty hardcore shit and finds his true calling."
+	},
+	{
+		"name":"Zootopia",
+		"poster":"./imgs/2021/zootopia.webp",
+		"year":2016,
+		"ratingNameOne":"Disney",
+		"ratingOne":5,
+		"ratingNameTwo":"Fun",
+		"ratingTwo":5,
+		"description":"A strong recent entry into the Disney catalog, <i>Zootopia</i> is a lively buddy-cop detective thriller. Great voice acting and animation."
+	},
+	{
+		"name":"Clue",
+		"poster":"./imgs/2021/clue.webp",
+		"year":1985,
+		"ratingNameOne":"Adaptation",
+		"ratingOne":4,
+		"ratingNameTwo":"High-Concept",
+		"ratingTwo":4,
+		"description":"Easily the best film adaptation of a board game, <i>Clue</i> is a clever little murder/mystery comedy. Pretty fun stuff, and a casual watch."
+	},
+	{
+		"name":"Mr. Nobody",
+		"poster":"./imgs/2021/mr-nobody.webp",
+		"year":2009,
+		"ratingNameOne":"Mindfuck",
+		"ratingOne":5,
+		"ratingNameTwo":"Foreign",
+		"ratingTwo":5,
+		"description":"A movie about time, space and causality. This one is <i>weird</i>."
+	},
+	{
+		"name":"Reservoir Dogs",
+		"poster":"./imgs/2021/reservoir-dogs.webp",
+		"year":1992,
+		"ratingNameOne":"Top-Teir Movie",
+		"ratingOne":5,
+		"ratingNameTwo":"Tarantino",
+		"ratingTwo":5,
+		"description":"A beautiful and chaotic film. A group of criminals prepare for a bank heist, and then work to pick up the bloody pieces after."
+	},
+	{
+		"name":"Ghostbusters",
+		"poster":"./imgs/2021/ghostbusters.webp",
+		"year":1984,
+		"ratingNameOne":"Perfect Movie",
+		"ratingOne":5,
+		"ratingNameTwo":"Great Cast",
+		"ratingTwo":4,
+		"description":"After being kicked out of academia, a small group of scientist go into business capturing ghosts. A much better film than I remembered."
+	},
+	{
+		"name":"Total Recall",
+		"poster":"./imgs/2021/total-recall.webp",
+		"year":1990,
+		"ratingNameOne":"Mindfuck",
+		"ratingOne":3,
+		"ratingNameTwo":"Modern Classic",
+		"ratingTwo":3,
+		"description":"Another Philip Dick adaptation, <i>Total Recall</i> is a real trip. What is real and what is illusion(?) when an ordinary man gets wrapped up in the Martian rebellion."
+	},
+	{
+		"name":"The Life Aquatic with Steve Zissou",
+		"poster":"./imgs/2021/the-life-aquatic-with-steve-zissou.webp",
+		"year":2004,
+		"ratingNameOne":"Wes Anderson",
+		"ratingOne":5,
+		"ratingNameTwo":"Sad",
+		"ratingTwo":4,
+		"description":"A washed up Jacques-Cousteau-type-guy must go on a mission to exact revenge on a rare shark. There's also family drama, several love triangles, and some pretty great action scenes."
+	},
+	{
+		"name":"Chicago",
+		"poster":"./imgs/2021/chicago.webp",
+		"year":2012,
+		"ratingNameOne":"Musical",
+		"ratingOne":5,
+		"ratingNameTwo":"Dark",
+		"ratingTwo":3,
+		"description":"A movie about fame, media manipulation, and justice, tied together with some insane song-and-dance numbers. Will leave songs stuck in your head."
+	},
+	{
+		"name":"Free Space",
+		"poster":"./imgs/bg/freespace.gif",
+		"year":"????",
+		"ratingNameOne":"Free",
+		"ratingOne":5,
+		"ratingNameTwo":"Space",
+		"ratingTwo":5,
+		"description":"Watch a movie of your choice. It can be any that you've wanted to watch but I recommend watching something similar in theme of this year's movies."
+	},
+	{
+		"name":"Hot Fuzz",
+		"poster":"./imgs/2021/hot-fuzz.webp",
+		"year":2007,
+		"ratingNameOne":"Badass",
+		"ratingOne":4,
+		"ratingNameTwo":"Great Chemistry",
+		"ratingTwo":5,
+		"description":"A severely stylish and loveable buddy-cop movie. When a London super-cop is transferred to the back country, he finds it much less peaceful than he was expecting."
+	},
+	{
+		"name":"Birdman",
+		"poster":"./imgs/2021/birdman.webp",
+		"year":2014,
+		"ratingNameOne":"Drama",
+		"ratingOne":4,
+		"ratingNameTwo":"Oscars",
+		"ratingTwo":5,
+		"description":"Michael Keaton is an aging actor trying to recapture his fame by putting on a stage play. But will he be crushed by the weight of his former stardom? "
+	},
+	{
+		"name":"Gandahar",
+		"poster":"./imgs/2021/gandahar.webp",
+		"year":1987,
+		"ratingNameOne":"Fucking Weird",
+		"ratingOne":4,
+		"ratingNameTwo":"Unique",
+		"ratingTwo":5,
+		"description":"Some sort of weird elf has to save his kingdom from an army of undead robots. Very arty and full of vision. French."
+	},
+	{
+		"name":"Smokin' Aces",
+		"poster":"./imgs/2021/smokin-aces.webp",
+		"year":2006,
+		"ratingNameOne":"Hype",
+		"ratingOne":5,
+		"ratingNameTwo":"Ensemble Cast",
+		"ratingTwo":4,
+		"description":"Multiple assassins all show up to claim the same giant bounty: Buddy Aces, a witness for the FBI. A giant clusterfuck of violence, crime, and intrigue. "
+	},
+	{
+		"name":"Nightcrawler",
+		"poster":"./imgs/2021/nightcrawler.webp",
+		"year":2014,
+		"ratingNameOne":"Dark",
+		"ratingOne":5,
+		"ratingNameTwo":"Brooding",
+		"ratingTwo":4,
+		"description":"A man living on the fringe discovers a way to make huge money: selling gruesome video footage to news networks. But this gritty new vocation soon starts getting dangerous."
+	},
+	{
+		"name":"Smart House",
+		"poster":"./imgs/2021/smarthouse.webp",
+		"year":1999,
+		"ratingNameOne":"Oh, You Remember This Shit",
+		"ratingOne":5,
+		"ratingNameTwo":"LeVar Burton Directed It",
+		"ratingTwo":5,
+		"description":"A kid from a broken family wins this internet contest, and the prize is a sci-fi future house. But then the house A.I. goes crazy. It's pretty good."
+	},
+	{
+		"name":"Knives Out",
+		"poster":"./imgs/2021/knives-out.webp",
+		"year":2019,
+		"ratingNameOne":"Recent",
+		"ratingOne":4,
+		"ratingNameTwo":"Solid",
+		"ratingTwo":4,
+		"description":"When a famous novelist dies under suspicious circumstances, his family goes crazy over the inheritance. A pretty tight little murder mystery/suspense."
+	},
+	{
+		"name":"Memento",
+		"poster":"./imgs/2021/memento.webp",
+		"year":2000,
+		"ratingNameOne":"One-of-a-Kind",
+		"ratingOne":5,
+		"ratingNameTwo":"Mindfuck",
+		"ratingTwo":4,
+		"description":"A man with a serious memory impairment has to find a way to avenge the death of his wife. This one is nuts, and not a casual watch."
+	},
+	{
+		"name":"The Wolf of Wall Street",
+		"poster":"./imgs/2021/the-wolf-of-wall-street.webp",
+		"year":2013,
+		"ratingNameOne":"Scorcese",
+		"ratingOne":5,
+		"ratingNameTwo":"Long Movie",
+		"ratingTwo":5,
+		"description":"Leo DiCaprio starts at the bottom and then scams his way to the top of the stock market. Along the way, <u>so</u> much shit happens."
+	},
+	{
+		"name":"The Room",
+		"poster":"./imgs/2021/the-room.webp",
+		"year":2003,
+		"ratingNameOne":"Notorious",
+		"ratingOne":5,
+		"ratingNameTwo":"So Bad It's Good",
+		"ratingTwo":5,
+		"description":"The <i>Citizen Kane</i> of bad cinema."
+	},
+	{
+		"name":"Repo! The Genetic Opera",
+		"poster":"./imgs/2021/repo-the-genetic-opera.webp",
+		"year":2008,
+		"ratingNameOne":"Unique",
+		"ratingOne":4,
+		"ratingNameTwo":"Fucked Up",
+		"ratingTwo":4,
+		"description":"A totally bizarre musical about organ harvesting and young love. Genuinely does feel like an opera."
+	},
+	{
+		"name":"Napoleon Dynamite",
+		"poster":"./imgs/2021/napoleon-dynamite.webp",
+		"year":2004,
+		"ratingNameOne":"Simple",
+		"ratingOne":5,
+		"ratingNameTwo":"Iconic",
+		"ratingTwo":4,
+		"description":"The meme classic that is also a pretty damn solid movie. Napoleon has to keep his wacky family together, all while finding time for highschool. "
+	}
+]
