@@ -74,15 +74,51 @@ document.querySelector( ".carousel-control-down" ).addEventListener( "click", fu
 });
 
 /* Registers a trigger for webpage elements & resources complete loading */
-window.addEventListener( "load", function() {
+window.addEventListener("load", function () {
+	setTimeout(function () {
+		const resetDateInMiliseconds = new Date(new Date().getFullYear() + 1, 4, 1).getTime();
+		// Initialize the countdown clock
+		const countdownEl = document.getElementById('countdown');
+		const daysElement = document.getElementById("days");
+		const hoursElement = document.getElementById("hours");
+		const minutesElement = document.getElementById("minutes");
+		const secondsElement = document.getElementById("seconds");
 
-	setTimeout(function(){
+		const loader = document.querySelector(".loader");
 
-		const loader = document.querySelector( ".loader" );
+		let countdownActive;
+		const second = 1000;
+		const minute = second * 60;
+		const hour = minute * 60;
+		const day = hour * 24;
+
+		function initializeCountdownClock() {
+			countdownActive = setInterval(() => {
+				const today = new Date().getTime(); // Get the current time
+				const distance = resetDateInMiliseconds - today; // Get the distance between today and the reset date
+				const days = Math.floor(distance / day);
+				const hours = Math.floor((distance % day) / hour);
+				const minutes = Math.floor((distance % hour) / minute);
+				const seconds = Math.floor((distance % minute) / second);
+
+				if (distance < 0) {
+					clearInterval(countdownActive);
+					countdownEl.style.display = "none"; // Hide the countdown clock
+				} else {
+					countdownActive == true;
+					daysElement.textContent = `${days}`;
+					hoursElement.textContent = `${hours}`;
+					minutesElement.textContent = `${minutes}`;
+					secondsElement.textContent = `${seconds}`;
+				}
+			}, second);
+		}
+
+		initializeCountdownClock();
 		loader.style.opacity = '0';
-		setTimeout(function(){ loader.style.display = "none"; }, 500);
-	},4000);
-}, false );
+		setTimeout(function () { loader.style.display = "none"; }, 500);
+	}, 4000);
+}, false);
 
 /* Retrieves movie info JSON and adds entries using templates */
 function load_Mingo( year ) {
