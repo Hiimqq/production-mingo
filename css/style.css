@@ -398,7 +398,7 @@ td>div {
 
 	/* == IDs == */
 	#mingo-card {
-		width: 80vmin;
+		width: 65vmin;
 		height: 80vmin;
 		aspect-ratio: 1;
 	}
