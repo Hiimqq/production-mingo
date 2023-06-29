@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	urlParams = null, viewMax = null, year = null;
 });
 
+
 /* Registers a trigger for webpage elements & resources complete loading */
 window.addEventListener("load", function () {
 	setTimeout(function () {
@@ -119,11 +120,11 @@ window.addEventListener("load", function () {
 	}, 4000);
 }, false);
 
-// Create a cache object to store the results
-const cache = {};
-
 /* Retrieves movie info JSON and adds entries using templates */
 function load_Mingo(year) {
+
+	// Create a cache object to store the results
+	const cache = {};
 
 	// Check if the result is already cached
 	if (cache[year]) {
@@ -139,16 +140,15 @@ function load_Mingo(year) {
 			return response.json();
 		})
 		.then((movies) => {
-			// Tag the movies with an order property, order starts at 1 instead of 0.
-			const taggedMovies = movies.map((movie, index) => ({
-				...movie, order: index + 1,
+
+			// Tag the movies with an order property, order starts at 1 instead of 0
+			const taggedMovies = movies.map((movies, index) => ({
+				...movies, 
+				order: index + 1
 			}))
 			console.log(taggedMovies);
 			// Cache the tagged result
 			cache[year] = taggedMovies;
-
-			// Update the UI with the tagged result
-			updateUI(taggedMovies);
 
 			const color = ['M', 'I', 'N', 'G', 'O'];
 			let tBody1 = document.getElementById("mingo-body"),
