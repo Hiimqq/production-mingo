@@ -139,8 +139,7 @@ function load_Mingo(year) {
 			return response.json();
 		})
 		.then((movies) => {
-			console.log(movies);
-			// Tag the movies with an order
+			// Tag the movies with an order property, order starts at 1 instead of 0.
 			const taggedMovies = movies.map((movie, index) => ({
 				...movie, order: index + 1,
 			}))
