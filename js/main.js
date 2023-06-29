@@ -138,30 +138,36 @@ function load_Mingo(year) {
 			return response.json();
 		})
 		.then((movies) => {
+			let isOrderRandomized = false;
 			const tagMoviesWithOrderProperty = () => {
-				// Tag the movies with an order property. Sets property to randomize order.
-				const taggedMovies = movies.map((movie, index) => ({
-					...movie,
-					// order starts at 1 instead of 0.
-					order: index + 1
-				}));
-				// Cache the tagged result
+				let taggedMovies;
+				const cachedMovies = localStorage.getItem('movies');
+				if (cachedMovies) {
+					taggedMovies = JSON.parse(cachedMovies);
+					isOrderRandomized = true;
+				} else {
+					taggedMovies = movies.map((movie, index) => ({
+						...movie,
+						order: index + 1
+					}));
+					localStorage.setItem('movies', JSON.stringify(taggedMovies));
+				}
 				cache[year] = taggedMovies;
 				console.log('start order tagged movies: ', taggedMovies);
 			};
-			// Function to randomize the order property
 			const randomizeOrder = () => {
-				const arrayToRandomize = cache[year];
-				// Randomize the order property using the Fisher-Yates shuffle algorithm
-				for (let i = arrayToRandomize.length - 1; i > 0; i--) {
-					const j = Math.floor(Math.random() * (i + 1));
-					[arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
+				if (!isOrderRandomized) {
+					const arrayToRandomize = cache[year];
+					for (let i = arrayToRandomize.length - 1; i > 0; i--) {
+						const j = Math.floor(Math.random() * (i + 1));
+						[arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
+					}
+					isOrderRandomized = true;
+					localStorage.setItem('movies', JSON.stringify(arrayToRandomize));
+					console.log('random order: ', arrayToRandomize);
 				}
-				console.log('random order shuffle: ', arrayToRandomize);
 			};
-			// Call the tagMoviesWithOrder function to tag the movies initially
 			tagMoviesWithOrderProperty();
-			// Add a click event listener to the button
 			const randomizeButton = document.getElementById("randomizeListBtn");
 			randomizeButton.addEventListener("click", randomizeOrder);
 
@@ -182,7 +188,6 @@ function load_Mingo(year) {
 				if (j > 4) j = 0, k++;
 				tCells[i].childNodes[0].childNodes[0].style.backgroundImage = `url("${movies[i].poster}")`;
 				tCells[i].childNodes[0].childNodes[1].innerHTML = movies[i].name;
-
 
 				carInner.innerHTML += dedent`
 					<article class="carousel-item ${i == 0 ? "active" : ''}">
