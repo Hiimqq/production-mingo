@@ -148,7 +148,7 @@ function load_Mingo(year) {
 				} else {
 					taggedMovies = movies.map((movie, index) => ({
 						...movie,
-						order: index + 1
+						order: index
 					}));
 					localStorage.setItem('movies', JSON.stringify(taggedMovies));
 				}
