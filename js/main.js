@@ -122,128 +122,135 @@ window.addEventListener("load", function () {
 
 /* Retrieves movie info JSON and adds entries using templates */
 function load_Mingo(year) {
-	// Create a cache object to store the results
-	const cache = {};
-	// Check if the result is already cached
-	if (cache[year]) {
-		// Use the cached result
-		updateUI(cache[year]);
-		return;
-	}
+  console.log('year: ', year);
+  // Create a cache object to store the results
+  const movieCache = {};
+  console.log('movieCache: ', movieCache);
+  // Check if the result is already cached
+  if (movieCache[year]) {
+    // Use the cached result
+    updateUI(movieCache[year]);
+    return;
+  }
 
-	fetch(`./jsons/${year}.json`)
-		.then(response => {
-			if (!response.ok && response.status == 404)
-				throw `404 File Not Found: ${page}.json`;
-			return response.json();
-		})
-		.then((movies) => {
-			let isOrderRandomized = false;
-			const tagMoviesWithOrderProperty = () => {
-				let taggedMovies;
-				const cachedMovies = localStorage.getItem('movies');
-				if (cachedMovies) {
-					taggedMovies = JSON.parse(cachedMovies);
-					isOrderRandomized = true;
-				} else {
-					taggedMovies = movies.map((movie, index) => ({
-						...movie,
-						order: index
-					}));
-					localStorage.setItem('movies', JSON.stringify(taggedMovies));
-				}
-				cache[year] = taggedMovies;
-				console.log('start order tagged movies: ', taggedMovies);
-			};
-			const randomizeOrder = () => {
-				if (!isOrderRandomized) {
-					const arrayToRandomize = cache[year];
-					for (let i = arrayToRandomize.length - 1; i > 0; i--) {
-						const j = Math.floor(Math.random() * (i + 1));
-						[arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
-					}
-					isOrderRandomized = true;
-					localStorage.setItem('movies', JSON.stringify(arrayToRandomize));
-					console.log('random order: ', arrayToRandomize);
-				}
-			};
-			tagMoviesWithOrderProperty();
-			const randomizeButton = document.getElementById("randomizeListBtn");
-			randomizeButton.addEventListener("click", randomizeOrder);
+  fetch(`./jsons/${year}.json`)
+    .then(response => {
+      if (!response.ok && response.status == 404)
+        throw `404 File Not Found: ${page}.json`;
+      return response.json();
+    })
+    .then((movies) => {
+      let isOrderRandomized = false;
+      const tagMoviesWithOrderProperty = () => {
+        let taggedMovies;
+        const cachedMovies = localStorage.getItem('movies');
+        console.log('cachedMovies: ', cachedMovies);
+        if (cachedMovies) {
+          taggedMovies = JSON.parse(cachedMovies);
+          isOrderRandomized = true;
+        } else {
+          taggedMovies = movies.map((movie, index) => ({
+            ...movie,
+            order: index
+          }));
+          localStorage.setItem('movies', JSON.stringify(taggedMovies));
+        }
+        movieCache[year] = taggedMovies;
+        console.log('start order tagged movies: ', taggedMovies);
+      };
+      const randomizeOrder = () => {
+        if (!isOrderRandomized) {
+          const arrayToRandomize = movieCache[year];
+          for (let i = arrayToRandomize.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
+          }
+          isOrderRandomized = true;
+          localStorage.setItem('movies', JSON.stringify(arrayToRandomize));
+          console.log('random order: ', arrayToRandomize);
+        }
+      };
+      tagMoviesWithOrderProperty();
+      const randomizeButton = document.getElementById("randomizeListBtn");
+      randomizeButton.addEventListener("click", randomizeOrder);
 
-			const color = ['M', 'I', 'N', 'G', 'O'];
-			let tBody1 = document.getElementById("mingo-body"),
-				tBody2 = tBody1.cloneNode(true),
-				tCells = tBody2.getElementsByTagName("td"),
-				carousel1 = document.getElementById("carouselMovieInfo"),
-				carousel2 = carousel1.cloneNode(true),
-				carInner = carousel2.querySelector("#carouselMovieInfo .carousel-inner"),
-				carIndic = carousel2.querySelector("#carouselMovieInfo .carousel-indicators");
+      const color = ['M', 'I', 'N', 'G', 'O'];
+      let tBody1 = document.getElementById("mingo-body"),
+        tBody2 = tBody1.cloneNode(true),
+        tCells = tBody2.getElementsByTagName("td"),
+        carousel1 = document.getElementById("carouselMovieInfo"),
+        carousel2 = carousel1.cloneNode(true),
+        carInner = carousel2.querySelector("#carouselMovieInfo .carousel-inner"),
+        carIndic = carousel2.querySelector("#carouselMovieInfo .carousel-indicators");
 
-			carInner.innerHTML = '',
-				carIndic.innerHTML = '';
+      carInner.innerHTML = '';
+      carIndic.innerHTML = '';
 
-			for (let i = 0, j = 0, k = 1; i < tCells.length; i++, j++) {
+      for (let i = 0, j = 0, k = 1; i < tCells.length; i++, j++) {
+        if (j > 4) {
+          j = 0;
+          k++;
+        }
+        tCells[i].childNodes[0].childNodes[0].style.backgroundImage = `url("${movies[i].poster}")`;
+        tCells[i].childNodes[0].childNodes[1].innerHTML = movies[i].name;
 
-				if (j > 4) j = 0, k++;
-				tCells[i].childNodes[0].childNodes[0].style.backgroundImage = `url("${movies[i].poster}")`;
-				tCells[i].childNodes[0].childNodes[1].innerHTML = movies[i].name;
+        carInner.innerHTML += dedent`
+          <article class="carousel-item ${i === 0 ? "active" : ''}">
+            <table width="100%" height="100%">
+              <tbody>
+                <tr><td rowspan="0"><img class="poster ${color[j]}" src="${movies[i].poster}" loading="lazy"></td></tr>
+                <tr><td colspan="2"><h2>${movies[i].name}</h2></td></tr>
+                <tr>
+                  <td class="w-50 text-nowrap"><span class="float-end">Year:</span></td>
+                  <td class="w-50">${movies[i].year}</td>
+                </tr>
+                <tr>
+                  <td class="w-50 text-nowrap"><span class="float-end">${movies[i].ratingNameOne}:</span></td>
+                  <td class="w-50"><span class="rating stars-${movies[i].ratingOne}"></span></td>
+                </tr>
+                <tr>
+                  <td class="w-50 text-nowrap"><span class="float-end">${movies[i].ratingNameTwo}:</span></td>
+                  <td class="w-50"><span class="rating stars-${movies[i].ratingTwo}"></span></td>
+                </tr>
+                <tr><td colspan="2"><p>${movies[i].description}</p></td></tr>
+              </tbody>
+            </table>
+          </article>
+        `;
 
-				carInner.innerHTML += dedent`
-					<article class="carousel-item ${i == 0 ? "active" : ''}">
-						<table width="100%" height="100%">
-							<tbody>
-								<tr><td rowspan="0"><img class="poster ${color[j]}" src="${movies[i].poster}" loading="lazy"></td></tr>
-								<tr><td colspan="2"><h2>${movies[i].name}</h2></td></tr>
-								<tr>
-									<td class="w-50 text-nowrap"><span class="float-end">Year:</span></td>
-									<td class="w-50">${movies[i].year}</td>
-								</tr>
-								<tr>
-									<td class="w-50 text-nowrap"><span class="float-end">${movies[i].ratingNameOne}:</span></td>
-									<td class="w-50"><span class="rating stars-${movies[i].ratingOne}"></span></td>
-								</tr>
-								<tr>
-									<td class="w-50 text-nowrap"><span class="float-end">${movies[i].ratingNameTwo}:</span></td>
-									<td class="w-50"><span class="rating stars-${movies[i].ratingTwo}"></span></td>
-								</tr>
-								<tr><td colspan="2"><p>${movies[i].description}</p></td></tr>
-							</tbody>
-						</table>
-					</article>
-				`;
+        carIndic.innerHTML += dedent`
+          <button class="nav-item ${i === 0 ? ' active' : ''}"
+            type="button" data-bs-target="#carouselMovieInfo"
+            data-bs-slide-to="${i}" aria-label="Slide ${i}">
+            ${color[j]}-${k}
+          </button>
+        `;
+      }
 
-				carIndic.innerHTML += dedent`
-					<button class="nav-item ${i == 0 ? ' active' : ''}"
-						type="button" data-bs-target="#carouselMovieInfo"
-						data-bs-slide-to="${i}" aria-label="Slide ${i}">
-						${color[j]}-${k}
-					</button>
-				`;
-			}
+      tBody1.replaceWith(tBody2);
+      carousel1.replaceWith(carousel2);
+      bsMovieInfoCarousel = new bootstrap.Carousel(carousel2);
 
-			tBody1.replaceWith(tBody2);
-			carousel1.replaceWith(carousel2);
-			bsMovieInfoCarousel = new bootstrap.Carousel(carousel2);
+      {
+        /* Get bootstrap year carousel */
+        let yearNode = document.getElementById(year),
+          yearIndx = Array.prototype.indexOf.call(yearNode.parentNode.parentNode.children, yearNode.parentNode),
+          yearCaro = document.getElementById("historyCarouselControls"),
+          yearBtns = document.getElementsByClassName("nav-year");
 
-			{
-				/* Get bootstrap year carousel */
-				let yearNode = document.getElementById(year),
-					yearIndx = Array.prototype.indexOf.call(yearNode.parentNode.parentNode.children, yearNode.parentNode),
-					yearCaro = document.getElementById("historyCarouselControls"),
-					yearBtns = document.getElementsByClassName("nav-year");
+        for (let i = 0; i < yearBtns.length; i++)
+          yearBtns[i].classList.remove("active")
 
-				for (let i = 0; i < yearBtns.length; i++)
-					yearBtns[i].classList.remove("active")
+        /* Highlights the page nav button */
+        yearNode.classList.add("active");
+        new bootstrap.Carousel(yearCaro).to(yearIndx);
 
-				/* Highlights the page nav button */
-				yearNode.classList.add("active");
-				new bootstrap.Carousel(yearCaro).to(yearIndx);
+        yearNode = null, yearIndx = null, yearCaro = null, yearBtns = null;
+      }
 
-				yearNode = null, yearIndx = null, yearCaro = null, yearBtns = null;
-			}
-
-			tBody1 = null, tBody2 = null, tCells = null, carousel1 = null, carousel2 = null, carInner = null, carIndic = null, movies = null;
-		})
-		.catch(error => { console.log(error); });
+      tBody1 = null, tBody2 = null, tCells = null, carousel1 = null, carousel2 = null, carInner = null, carIndic = null, movies = null;
+    })
+    .catch(error => {
+      console.log(error);
+    });
 }
