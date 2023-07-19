@@ -78,6 +78,7 @@ p {
 	border: 1px solid #999999;
 }
 
+/* change active background color in modal */
 #carouselMovieInfo>.carousel-indicators [data-bs-target].active {
 	background-color: #555555;
 }
