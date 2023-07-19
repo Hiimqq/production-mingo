@@ -105,7 +105,7 @@ window.addEventListener("load", function () {
 					clearInterval(countdownActive);
 					countdownEl.style.display = "none"; // Hide the countdown clock
 				} else {
-					countdownActive == true;
+					countdownActive === true;
 					daysElement.textContent = `${days}`;
 					hoursElement.textContent = `${hours}`;
 					minutesElement.textContent = `${minutes}`;
