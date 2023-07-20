@@ -4,120 +4,120 @@ let bsMovieInfoCarousel;
 /* Registers swipe actions to navigate movies modal */
 document.addEventListener("touchstart", event => {
 
-	bsMovieInfoCarousel.touchStartY = event.changedTouches[0].screenY,
-		bsMovieInfoCarousel.touchStartX = event.changedTouches[0].screenX;
+  bsMovieInfoCarousel.touchStartY = event.changedTouches[0].screenY,
+    bsMovieInfoCarousel.touchStartX = event.changedTouches[0].screenX;
 });
 document.addEventListener("touchend", event => {
 
-	let touchEndY = event.changedTouches[0].screenY,
-		touchEndX = event.changedTouches[0].screenX,
-		touchStartY = bsMovieInfoCarousel.touchStartY,
-		touchStartX = bsMovieInfoCarousel.touchStartX,
-		touchDiffY = Math.abs(touchStartY - touchEndY),
-		touchDiffX = Math.abs(touchStartX - touchEndX);
+  let touchEndY = event.changedTouches[0].screenY,
+    touchEndX = event.changedTouches[0].screenX,
+    touchStartY = bsMovieInfoCarousel.touchStartY,
+    touchStartX = bsMovieInfoCarousel.touchStartX,
+    touchDiffY = Math.abs(touchStartY - touchEndY),
+    touchDiffX = Math.abs(touchStartX - touchEndX);
 
-	if (touchDiffY > touchDiffX && touchDiffY > 5)
-		(touchStartY < touchEndY) ? nav_Modal("ArrowUp") : nav_Modal("ArrowDown");
-	else if (touchDiffY < touchDiffX && touchDiffX > 5)
-		(touchStartX < touchEndX) ? nav_Modal("ArrowLeft") : nav_Modal("ArrowRight");
+  if (touchDiffY > touchDiffX && touchDiffY > 5)
+    (touchStartY < touchEndY) ? nav_Modal("ArrowUp") : nav_Modal("ArrowDown");
+  else if (touchDiffY < touchDiffX && touchDiffX > 5)
+    (touchStartX < touchEndX) ? nav_Modal("ArrowLeft") : nav_Modal("ArrowRight");
 });
 
 /* Registers key bindings to navigate movies modal */
 document.addEventListener("keydown", function (event) {
 
-	if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key))
-		nav_Modal(event.key);
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key))
+    nav_Modal(event.key);
 });
 
 function nav_Modal(event) {
 
-	let movieModal = document.getElementById("movieInfo");
-	if (!bsMovieInfoCarousel._isSliding && (window.getComputedStyle(movieModal).display != "none")) {
-		let carIndex = Array.prototype.indexOf.call(bsMovieInfoCarousel._items, bsMovieInfoCarousel._activeElement);
-		switch (event) {
-			case "ArrowUp":
-				carIndex += carIndex < 5 ? 20 : -5;
-				break;
-			case "ArrowDown":
-				carIndex += carIndex > 19 ? -20 : 5;
-				break;
-			case "ArrowLeft":
-				carIndex -= 1;
-				break;
-			case "ArrowRight":
-				carIndex += 1;
-				break;
-		}
-		bsMovieInfoCarousel.to(carIndex);
-		carIndex = null;
-	}
+  let movieModal = document.getElementById("movieInfo");
+  if (!bsMovieInfoCarousel._isSliding && (window.getComputedStyle(movieModal).display != "none")) {
+    let carIndex = Array.prototype.indexOf.call(bsMovieInfoCarousel._items, bsMovieInfoCarousel._activeElement);
+    switch (event) {
+      case "ArrowUp":
+        carIndex += carIndex < 5 ? 20 : -5;
+        break;
+      case "ArrowDown":
+        carIndex += carIndex > 19 ? -20 : 5;
+        break;
+      case "ArrowLeft":
+        carIndex -= 1;
+        break;
+      case "ArrowRight":
+        carIndex += 1;
+        break;
+    }
+    bsMovieInfoCarousel.to(carIndex);
+    carIndex = null;
+  }
 }
 
 /* Registers a trigger for webpage elements complete loading */
 document.addEventListener("DOMContentLoaded", function () {
 
-	let urlParams = new URLSearchParams(window.location.search).get("year"), /* Gets page year from address bar */
-		viewMax = screen.width > screen.height ? screen.width : screen.height, /* Get largest screen dimension */
-		yearBtns = document.getElementsByClassName("nav-year"),
-		year = urlParams ? urlParams : "2023";
+  let urlParams = new URLSearchParams(window.location.search).get("year"), /* Gets page year from address bar */
+    viewMax = screen.width > screen.height ? screen.width : screen.height, /* Get largest screen dimension */
+    yearBtns = document.getElementsByClassName("nav-year"),
+    year = urlParams ? urlParams : "2023";
 
-	document.querySelector(".carousel-control-up").addEventListener("click", function () { nav_Modal("ArrowUp") });
-	document.querySelector(".carousel-control-down").addEventListener("click", function () { nav_Modal("ArrowDown") });
+  document.querySelector(".carousel-control-up").addEventListener("click", function () { nav_Modal("ArrowUp") });
+  document.querySelector(".carousel-control-down").addEventListener("click", function () { nav_Modal("ArrowDown") });
 
-	for (let i = 0; i < yearBtns.length; i++)
-		yearBtns[i].addEventListener("click", function () { load_Mingo(yearBtns[i].id); });
+  for (let i = 0; i < yearBtns.length; i++)
+    yearBtns[i].addEventListener("click", function () { load_Mingo(yearBtns[i].id); });
 
-	load_Mingo(year);
+  load_Mingo(year);
 
-	urlParams = null, viewMax = null, year = null;
+  urlParams = null, viewMax = null, year = null;
 });
 
 
 /* Registers a trigger for webpage elements & resources complete loading */
 window.addEventListener("load", function () {
-	setTimeout(function () {
-		const resetDateInMiliseconds = new Date(new Date().getFullYear() + 1, 4, 1).getTime();
-		// Initialize the countdown clock
-		const countdownEl = document.getElementById('countdown');
-		const daysElement = document.getElementById("days");
-		const hoursElement = document.getElementById("hours");
-		const minutesElement = document.getElementById("minutes");
-		const secondsElement = document.getElementById("seconds");
+  setTimeout(function () {
+    const resetDateInMiliseconds = new Date(new Date().getFullYear() + 1, 4, 1).getTime();
+    // Initialize the countdown clock
+    const countdownEl = document.getElementById('countdown');
+    const daysElement = document.getElementById("days");
+    const hoursElement = document.getElementById("hours");
+    const minutesElement = document.getElementById("minutes");
+    const secondsElement = document.getElementById("seconds");
 
-		const loader = document.querySelector(".loader");
+    const loader = document.querySelector(".loader");
 
-		let countdownActive;
-		const second = 1000;
-		const minute = second * 60;
-		const hour = minute * 60;
-		const day = hour * 24;
+    let countdownActive;
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
 
-		function initializeCountdownClock() {
-			countdownActive = setInterval(() => {
-				const today = new Date().getTime(); // Get the current time
-				const distance = resetDateInMiliseconds - today; // Get the distance between today and the reset date
-				const days = Math.floor(distance / day);
-				const hours = Math.floor((distance % day) / hour);
-				const minutes = Math.floor((distance % hour) / minute);
-				const seconds = Math.floor((distance % minute) / second);
+    function initializeCountdownClock() {
+      countdownActive = setInterval(() => {
+        const today = new Date().getTime(); // Get the current time
+        const distance = resetDateInMiliseconds - today; // Get the distance between today and the reset date
+        const days = Math.floor(distance / day);
+        const hours = Math.floor((distance % day) / hour);
+        const minutes = Math.floor((distance % hour) / minute);
+        const seconds = Math.floor((distance % minute) / second);
 
-				if (distance < 0) {
-					clearInterval(countdownActive);
-					countdownEl.style.display = "none"; // Hide the countdown clock
-				} else {
-					countdownActive === true;
-					daysElement.textContent = `${days}`;
-					hoursElement.textContent = `${hours}`;
-					minutesElement.textContent = `${minutes}`;
-					secondsElement.textContent = `${seconds}`;
-				}
-			}, second);
-		}
+        if (distance < 0) {
+          clearInterval(countdownActive);
+          countdownEl.style.display = "none"; // Hide the countdown clock
+        } else {
+          countdownActive === true;
+          daysElement.textContent = `${days}`;
+          hoursElement.textContent = `${hours}`;
+          minutesElement.textContent = `${minutes}`;
+          secondsElement.textContent = `${seconds}`;
+        }
+      }, second);
+    }
 
-		initializeCountdownClock();
-		loader.style.opacity = '0';
-		setTimeout(function () { loader.style.display = "none"; }, 500);
-	}, 4000);
+    initializeCountdownClock();
+    loader.style.opacity = '0';
+    setTimeout(function () { loader.style.display = "none"; }, 500);
+  }, 4000);
 }, false);
 
 function load_Mingo(year) {
