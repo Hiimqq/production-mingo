@@ -139,8 +139,17 @@ function load_Mingo(year) {
         listYear: year
       }));
 
+      if (!movieCache[year]) {
+        movieCache[year] = [];
+      }
+      
+      // movieCache[year] = movieCache[year].push(taggedMovies);
+      movieCache[year] = [...movieCache[year], ...taggedMovies];
+      // movieCache[year].concat(...taggedMovies);
+
+      console.log('movieCache: ', movieCache);
+      console.log('taggedMovies: ', taggedMovies);
       movieCache[year] = taggedMovies;
-      console.log('start order tagged movies: ', taggedMovies);
 
       const randomizeOrder = () => {
         const arrayToRandomize = movieCache[year];
