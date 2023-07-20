@@ -120,57 +120,36 @@ window.addEventListener("load", function () {
 	}, 4000);
 }, false);
 
-/* Retrieves movie info JSON and adds entries using templates */
 function load_Mingo(year) {
   console.log('year: ', year);
   // Create a cache object to store the results
-  const movieCache = {};
+  const movieCache = [];
   console.log('movieCache: ', movieCache);
-  // Check if the result is already cached
+  // Use the cached result if available
   if (movieCache[year]) {
-    // Use the cached result
     updateUI(movieCache[year]);
     return;
   }
-
   fetch(`./jsons/${year}.json`)
-    .then(response => {
-      if (!response.ok && response.status == 404)
-        throw `404 File Not Found: ${page}.json`;
-      return response.json();
-    })
-    .then((movies) => {
-      let isOrderRandomized = false;
-      const tagMoviesWithOrderProperty = () => {
-        let taggedMovies;
-        const cachedMovies = localStorage.getItem('movies');
-        console.log('cachedMovies: ', cachedMovies);
-        if (cachedMovies) {
-          taggedMovies = JSON.parse(cachedMovies);
-          isOrderRandomized = true;
-        } else {
-          taggedMovies = movies.map((movie, index) => ({
-            ...movie,
-            order: index
-          }));
-          localStorage.setItem('movies', JSON.stringify(taggedMovies));
-        }
-        movieCache[year] = taggedMovies;
-        console.log('start order tagged movies: ', taggedMovies);
-      };
+    .then(response => response.json())
+    .then(movies => {
+      const taggedMovies = movies.map((movie, index) => ({
+        ...movie,
+        order: index,
+        listYear: year
+      }));
+
+      movieCache[year] = taggedMovies;
+      console.log('start order tagged movies: ', taggedMovies);
+
       const randomizeOrder = () => {
-        if (!isOrderRandomized) {
-          const arrayToRandomize = movieCache[year];
-          for (let i = arrayToRandomize.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
-          }
-          isOrderRandomized = true;
-          localStorage.setItem('movies', JSON.stringify(arrayToRandomize));
-          console.log('random order: ', arrayToRandomize);
+        const arrayToRandomize = movieCache[year];
+        for (let i = arrayToRandomize.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
         }
+        console.log('random order: ', arrayToRandomize);
       };
-      tagMoviesWithOrderProperty();
       const randomizeButton = document.getElementById("randomizeListBtn");
       randomizeButton.addEventListener("click", randomizeOrder);
 
