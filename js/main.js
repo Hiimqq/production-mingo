@@ -120,10 +120,12 @@ window.addEventListener("load", function () {
   }, 4000);
 }, false);
 
+// Create a cache object to store the results
+const movieCache = [];
+
 function load_Mingo(year) {
   console.log('year: ', year);
-  // Create a cache object to store the results
-  const movieCache = [];
+
   console.log('movieCache: ', movieCache);
   // Use the cached result if available
   if (movieCache[year]) {
@@ -143,8 +145,10 @@ function load_Mingo(year) {
         movieCache[year] = [];
       }
       
+      movieCache.push(...taggedMovies);
+
       // movieCache[year] = movieCache[year].push(taggedMovies);
-      movieCache[year] = [...movieCache[year], ...taggedMovies];
+      // movieCache[year] = [...movieCache[year], ...taggedMovies];
       // movieCache[year].concat(...taggedMovies);
 
       console.log('movieCache: ', movieCache);
