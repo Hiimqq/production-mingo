@@ -120,48 +120,30 @@ window.addEventListener("load", function () {
   }, 4000);
 }, false);
 
-// Create a cache object to store the results
-const movieCache = [];
-
 function load_Mingo(year) {
-  console.log('year: ', year);
 
-  console.log('movieCache: ', movieCache);
-  // Use the cached result if available
-  if (movieCache[year]) {
-    updateUI(movieCache[year]);
-    return;
-  }
   fetch(`./jsons/${year}.json`)
     .then(response => response.json())
     .then(movies => {
+      console.log('movies: ', movies);
+      // tag movies with order and year properties
       const taggedMovies = movies.map((movie, index) => ({
         ...movie,
         order: index,
         listYear: year
       }));
-
-      if (!movieCache[year]) {
-        movieCache[year] = [];
-      }
-      
-      movieCache.push(...taggedMovies);
-
-      // movieCache[year] = movieCache[year].push(taggedMovies);
-      // movieCache[year] = [...movieCache[year], ...taggedMovies];
-      // movieCache[year].concat(...taggedMovies);
-
-      console.log('movieCache: ', movieCache);
-      console.log('taggedMovies: ', taggedMovies);
-      movieCache[year] = taggedMovies;
-
+      console.log('tagged movies: ', taggedMovies);
+      // map order property from tagged movies
+      const taggedOrder = taggedMovies.map(movie => movie.order);
+      console.log('tagged order: ', taggedOrder);
+      // on click randomize tagged order
       const randomizeOrder = () => {
-        const arrayToRandomize = movieCache[year];
-        for (let i = arrayToRandomize.length - 1; i > 0; i--) {
+        const randomizedOrder = taggedOrder;
+        for (let i = randomizedOrder.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
-          [arrayToRandomize[i].order, arrayToRandomize[j].order] = [arrayToRandomize[j].order, arrayToRandomize[i].order];
+          [randomizedOrder[i], randomizedOrder[j]] = [randomizedOrder[j], randomizedOrder[i]];
         }
-        console.log('random order: ', arrayToRandomize);
+        console.log(randomizedOrder);
       };
       const randomizeButton = document.getElementById("randomizeListBtn");
       randomizeButton.addEventListener("click", randomizeOrder);
@@ -179,32 +161,33 @@ function load_Mingo(year) {
       carIndic.innerHTML = '';
 
       for (let i = 0, j = 0, k = 1; i < tCells.length; i++, j++) {
+        const movie = taggedMovies.find(movie => movie.order === i);
         if (j > 4) {
           j = 0;
           k++;
         }
-        tCells[i].childNodes[0].childNodes[0].style.backgroundImage = `url("${movies[i].poster}")`;
-        tCells[i].childNodes[0].childNodes[1].innerHTML = movies[i].name;
+        tCells[i].childNodes[0].childNodes[0].style.backgroundImage = `url("${movie.poster}")`;
+        tCells[i].childNodes[0].childNodes[1].innerHTML = movie.name;
 
         carInner.innerHTML += dedent`
           <article class="carousel-item ${i === 0 ? "active" : ''}">
             <table width="100%" height="100%">
               <tbody>
-                <tr><td rowspan="0"><img class="poster ${color[j]}" src="${movies[i].poster}" loading="lazy"></td></tr>
-                <tr><td colspan="2"><h2>${movies[i].name}</h2></td></tr>
+                <tr><td rowspan="0"><img class="poster ${color[j]}" src="${movie.poster}" loading="lazy"></td></tr>
+                <tr><td colspan="2"><h2>${movie.name}</h2></td></tr>
                 <tr>
                   <td class="w-50 text-nowrap"><span class="float-end">Year:</span></td>
-                  <td class="w-50">${movies[i].year}</td>
+                  <td class="w-50">${movie.year}</td>
                 </tr>
                 <tr>
-                  <td class="w-50 text-nowrap"><span class="float-end">${movies[i].ratingNameOne}:</span></td>
-                  <td class="w-50"><span class="rating stars-${movies[i].ratingOne}"></span></td>
+                  <td class="w-50 text-nowrap"><span class="float-end">${movie.ratingNameOne}:</span></td>
+                  <td class="w-50"><span class="rating stars-${movie.ratingOne}"></span></td>
                 </tr>
                 <tr>
-                  <td class="w-50 text-nowrap"><span class="float-end">${movies[i].ratingNameTwo}:</span></td>
-                  <td class="w-50"><span class="rating stars-${movies[i].ratingTwo}"></span></td>
+                  <td class="w-50 text-nowrap"><span class="float-end">${movie.ratingNameTwo}:</span></td>
+                  <td class="w-50"><span class="rating stars-${movie.ratingTwo}"></span></td>
                 </tr>
-                <tr><td colspan="2"><p>${movies[i].description}</p></td></tr>
+                <tr><td colspan="2"><p>${movie.description}</p></td></tr>
               </tbody>
             </table>
           </article>
