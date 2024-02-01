@@ -6,4 +6,4 @@ This is a place to debug, test, integrate, iterate, and perfect the MINGO experi
 
 Enjoy the list!
 
-https://mingo.bingo
+(https://hiimqq.github.io/production-mingo/)
